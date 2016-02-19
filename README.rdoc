@@ -1,4 +1,7 @@
-== README
+Copyright 2016
+Colin Ilgen
+
+Newtown Radio App
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
