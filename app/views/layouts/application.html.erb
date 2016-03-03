@@ -11,32 +11,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default img-responsive">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
+    <ul class="nav navbar-nav img-responsive">
+      <li class="dropdown img-responsive">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newtown Radio <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Privacy Policy | Terms of Use</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Featured Radio Show</a></li>
+            <li><a href="#">iCal</a></li>
           </ul>
       </li>
     </ul>
-    <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> iCal <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Newtown Calendar</a></li>
-            <li><a href="#">Get Alerts on iCal</a></li>
-          </ul>
-        </li>
-      </ul>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse img-responsive" id="bs-example-navbar-collapse-1">
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
@@ -45,11 +36,11 @@
           <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
         </button>
       </form>
-    </div><!-- /.navbar-collapse -->
+    </div><!-- /navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <%= yield %>
-<footer class="site-footer">
-<p>&copy; 2016</a></footer>
+<footer class="site-footer img-responsive">
+<p>&copy; 2016</p><p>All Rights Reserved</p></footer>
 </body>
 </html>
