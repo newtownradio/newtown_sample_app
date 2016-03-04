@@ -11,17 +11,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Newtown Radio
-    <span class="caret"></span>
+  <!-- Single button -->
+<div class="btn-group img-responsive">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Newtown Radio <span class="caret"></span>
   </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
+  <ul class="dropdown-menu">
+    <li><a href="#index">Home</a></li>
+    <li><a href="#about">More Info</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+    <li><a href="#featured">Featured</a></li>
+    <li><a href="#calendar">Calendar</a></li>
   </ul>
 </div>
 <%= yield %>
