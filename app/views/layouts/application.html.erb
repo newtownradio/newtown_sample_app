@@ -12,21 +12,29 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootsrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <!-- Single button -->
-<div class="btn-group-vertical" role="group" label="...">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-  Newtown Radio <span class="glyphicon glyphicon-cog"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#index">Home</a></li>
-    <li><a href="#about">More Info</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#featured">Featured</a></li>
-    <li><a href="#calendar">Calendar</a></li>
+<!-- Single button -->
+<body data-spy="scroll" data-target=".navbar">
+<nav class="navbar navbar-inverse navbar-dropdown">
+  <div class="navbar-header">
+   <a class="navbar-brand" href="#">Newtown Radio</a>
+    <button type="button" class="navbar-toggle" toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+     <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-left">
+    <li class="active"><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#calendar">Calendar</a></li>
   </ul>
-</div><!--/button-group-vertical -->
+  </div><!-- /ul -->
+  <div class="navbar-collapse collapse">
+  </div> <!-- /navbar-collapse-->
+</nav>
 <%= yield %>
 <footer class="site-footer">
 <p>&copy; 2016.</p><p>All Rights Reserved.</p></footer>
