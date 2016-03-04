@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+
   <title>Newtown Radio</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootsrap/3.3.5/js/bootstrap.min.js"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= csrf_meta_tags %>
 </head>
 <body>
   <!-- Single button -->
-<div class="btn-group-vertical img-responsive">
-  <button type="button" class="btn btn-default dropdown-toggle" role="group"data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Newtown Radio <span class="glyphicon glyphicon-cog"></span>
+<div class="btn-group-vertical" role="group" label="...">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  Newtown Radio <span class="glyphicon glyphicon-cog"></span>
   </button>
   <ul class="dropdown-menu">
     <li><a href="#index">Home</a></li>
@@ -24,7 +26,7 @@
     <li><a href="#featured">Featured</a></li>
     <li><a href="#calendar">Calendar</a></li>
   </ul>
-</div>
+</div><!--/button-group-vertical -->
 <%= yield %>
 <footer class="site-footer">
 <p>&copy; 2016.</p><p>All Rights Reserved.</p></footer>
