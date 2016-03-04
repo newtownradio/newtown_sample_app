@@ -14,23 +14,23 @@
 </head>
 <!-- Single button -->
 <body data-spy="scroll" data-target=".navbar">
-<nav class="navbar navbar-inverse navbar-dropdown">
-  <div class="navbar-header">
-   <a class="navbar-brand" href="#">Newtown Radio</a>
-    <button type="button" class="navbar-toggle" toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-     <span class="icon-bar"></span>
-     <span class="icon-bar"></span>
-     <span class="icon-bar"></span>
-    </button>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
   </div>
   <div class="navbar-collapse collapse">
-  <ul class="nav navbar-nav navbar-left">
-    <li class="active"><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#featured">Featured</a></li>
-      <li><a href="#calendar">Calendar</a></li>
-  </ul>
+    <ul class="nav navbar-nav navbar-left">
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">home<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li><li><a href="#featured">Featured</a></li><li><a href="#calendar">Calendar</a></li>
+        </ul>
+      </li>
+    </ul>    
   </div><!-- /ul -->
   <div class="navbar-collapse collapse">
   </div> <!-- /navbar-collapse-->
