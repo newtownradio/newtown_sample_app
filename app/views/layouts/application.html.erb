@@ -12,22 +12,24 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top img-responsive">
-  <div class="navbar-headers">
+  <div class="navbar-header">
     <a class="navbar-brand img-responsive" href="#">Newtown Radio</a>
     <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <span class="glyphicon glyphicon-cog"></span>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Home</a></li>
-    <li><a href="#about">More Info</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#featured">Featured</a></li>
-    <li><a href="#calendar">Calendar</a></li>
-  </ul>
-  </button>
-  </div><!-- /dropdown-->
-</div><!-- /navbar header -->
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <span class="glyphicon glyphicon-cog"></span>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">More Info</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+        </ul>
+      </button>
+    </div><!-- /dropdown-->
+    <div class="dropdown-menu collapse">
+    </div>
+  </div><!-- /navbar header -->
 </nav>
 <%= yield %>
 <footer class="site-footer">
