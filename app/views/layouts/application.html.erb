@@ -11,27 +11,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-fixed-top img-responsive">
-  <div class="container-fluid">
+<nav class="navbar navbar-fixed-top">
   <div class="navbar-header">
-   <a class="navbar-brand" href="#">
-   </a>
-   <button type="button" class="navbar-toggle left" data-toggle="collapse" data-target=".navbar-collapse">
+   <a class="navbar-brand" href="#">Newtown Radio</a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
      <span class="icon-bar"></span>
     </button>
   </div>
-  <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav navbar-justified">
-      <li class="active"><a href="#">Index</a></li>
-      <li><a href="#about">About</a></li>
+  <div class="dropdown img-responsive">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a href="#index">Home</a></li>
+      <li><a href="#about">More Info</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#calendar">Calendar</a></li> 
+      <li role="separator" class="divider"></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#calendar">Calendar</a></li>
     </ul>
-  </div><!-- /ul -->
-  <div class="navbar-collapse collapse">
-  </div> <!-- /navbar-collapse-->
+  </div>
 </nav>
 <%= yield %>
 <footer class="site-footer">
