@@ -1,3 +1,8 @@
+nav {
+	background-image: url("cheap_diagonal_fabric.png");
+	background-repeat: repeat;
+}
+
 img {
 	display: block;
 	margin-left: auto;
@@ -6,8 +11,9 @@ img {
 }
 
 body {
-	background-color: white;
 	text-align: center;
+	background-image: url("cheap_diagonal_fabric.png");
+	background-repeat: repeat;
 	font-family: lucida sans typewriter;
 }
 
