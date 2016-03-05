@@ -10,31 +10,41 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://maxcdn.bootstrapcdn.com/bootsrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
 <!-- Single button -->
-<body data-spy="scroll" data-target=".navbar">
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navigation">
-          <div class="container" >
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
+    <div class="container-fluid">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="sr-only">Toggle Navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+       </div>
+       <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav navbar-right nav-tabs">
+           <li><a href="#home">Newtown Radio</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#contact">Contact</a></li>
+           <li><a href="#featured">Featured</a></li>
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+               Calendar <span class="caret"></span>
+             </a>
+             <ul class="dropdown-menu">
+               <li><a href="#schedule">Schedule</a></li>
+               <li><a href="#schedule-alerts">Get Alerts</a></li>
+             </ul>
+           </li>
 
-              <div class="collapse navbar-collapse" >
-                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown" role="presentation">
-                        <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" data-target="#">Home<span class="caret"></span></a>
-                           <ul class="dropdown-menu">
-                              <li><a href="#link">link</a></li>
-                              <li><a href="#link">link</a></li>
-                           </ul>
-                        </li>
-                </ul>
-             </div>
-          </div>
-       </nav>
+        </ul>
+      </div><!-- end nav content -->
+    </div><!-- end nav container -->
+</nav><!-- end navbar -->
 <%= yield %>
 <footer class="site-footer">
 <p>&copy; 2016.</p><p>All Rights Reserved.</p></footer>
