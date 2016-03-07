@@ -1,5 +1,12 @@
+ .navbar-brand {
+  background: url("NTR_LOGO.png") left / contain no-repeat;
+  width: 192px;
+  height: 100%;
+  padding: 6%;
+}
+
 nav {
-	background-image: url("cheap_diagonal_fabric.png");
+  background-image: url("cheap_diagonal_fabric.png");
 	background-repeat: repeat;
 }
 
@@ -7,7 +14,7 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15% 5% 5% 5%;
+	padding: 25% 5% 5% 5%;
 }
 
 body {
