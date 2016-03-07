@@ -1,8 +1,10 @@
  .navbar-brand {
-  background: url("NTR_LOGO.png") left / contain no-repeat;
-  width: 192px;
-  height: 100%;
-  padding: 6%;
+    background: url("NTR_LOGO.png") left / contain no-repeat;
+    position: absolute;
+    width: 100%;
+    left: 16px;
+    text-align: center;
+    margin: auto;
 }
 
 nav {
