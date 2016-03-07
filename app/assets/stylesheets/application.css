@@ -5,9 +5,10 @@ nav {
 
 .navbar-brand {
     background: url("NTR_LOGO.png") left / contain no-repeat;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    left: 16px;
+    left: auto;
+    right: auto;
     text-align: center;
     margin: auto;
 }
