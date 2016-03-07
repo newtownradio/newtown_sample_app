@@ -1,15 +1,15 @@
- .navbar-brand {
+nav {
+  background-image: url("cheap_diagonal_fabric.png");
+	background-repeat: repeat;
+}
+
+.navbar-brand {
     background: url("NTR_LOGO.png") left / contain no-repeat;
     position: absolute;
     width: 100%;
     left: 16px;
     text-align: center;
     margin: auto;
-}
-
-nav {
-  background-image: url("cheap_diagonal_fabric.png");
-	background-repeat: repeat;
 }
 
 img {
