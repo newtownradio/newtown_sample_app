@@ -1,7 +1,6 @@
 nav {
   background-image: url("starry-sky.gif");
 	background-repeat: repeat;
-	border: none;
 }
 
 .navbar-brand {
@@ -12,6 +11,14 @@ nav {
     right: auto;
     text-align: center;
     margin: auto;
+}
+
+.navbar-fixed-top {
+	border: 0
+}
+
+.nav-tabs {
+	border: 0
 }
 
 h1 {
@@ -31,6 +38,7 @@ body {
 	background-repeat: repeat;
 	font-family: lucida sans typewriter;
 	color: white;
+	border: none;
 }
 
 /*
