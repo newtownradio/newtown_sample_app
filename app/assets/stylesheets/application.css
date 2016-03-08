@@ -36,7 +36,7 @@ body {
 	text-align: center;
 	background-image: url("starry-sky.gif");
 	background-repeat: repeat;
-	font-family: lucida sans typewriter;
+	font-family: 'Lucida Sans Typewriter';
 	color: white;
 	border: none;
 }
