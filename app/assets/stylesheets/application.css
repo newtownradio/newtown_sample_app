@@ -1,6 +1,7 @@
 nav {
-  background-image: url("cheap_diagonal_fabric.png");
+  background-image: url("starry-sky.gif");
 	background-repeat: repeat;
+	border: none;
 }
 
 .navbar-brand {
@@ -13,6 +14,10 @@ nav {
     margin: auto;
 }
 
+h1 {
+	padding-top: 15%;
+}
+
 img {
 	display: block;
 	margin-left: auto;
@@ -22,9 +27,10 @@ img {
 
 body {
 	text-align: center;
-	background-image: url("cheap_diagonal_fabric.png");
+	background-image: url("starry-sky.gif");
 	background-repeat: repeat;
 	font-family: lucida sans typewriter;
+	color: white;
 }
 
 /*
