@@ -60,10 +60,21 @@ body {
 	border: none;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
+#wrap {
+	min-height: 100%;
 }
+
+#main {
+	overflow:auto;
+	padding-bottom: 180px;
+}  /* must be same height as the footer */
+
+#footer {
+	position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;
+} 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
