@@ -9,9 +9,11 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <style type="text/css">
+    #wrap {display:table;height:100%}
+  </style>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 
 </head>
 <!-- Single button -->
@@ -32,6 +34,7 @@
           <li><%= link_to "Newtown Radio", static_pages_index_path %></a> 
           <li><%= link_to "About", static_pages_about_path %></a>
           <li><%= link_to "Featured",static_pages_featured_path %></a>
+          <li><%= link_to "Products", static_pages_products_path %></a>   
           <li class="dropdown">
              <a href="https://newtown-radio.herokuapp.com/static_pages/calendar" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                Calendar <span class="caret"></span>
@@ -47,7 +50,16 @@
     </div><!-- end nav container -->
 </nav><!-- end navbar -->
 <%= yield %>
-<footer class="site-footer">
-<p>&copy; 2016.</p><p>All Rights Reserved.</p></footer>
+<div id="wrap">
+
+  <div id="main">
+
+  </div>
+
+</div>
+
+<div id="footer">
+<p>&copy; 2016.</p>
+</div>
 </body>
 </html>
