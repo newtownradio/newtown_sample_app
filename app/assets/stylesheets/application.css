@@ -1,6 +1,12 @@
 nav {
-  background-image: url("starry-sky.gif");
+  background-image: url("tumblr.white.gif");
 	background-repeat: repeat;
+}
+
+nav li a {
+	background-image: url("tumblr.white.gif");
+	background-repeat: repeat;
+	border: none;
 }
 
 .navbar-brand {
@@ -53,10 +59,10 @@ h5 {
 
 body {
 	text-align: center;
-	background-image: url("starry-sky.gif");
+	background-image: url("tumblr.white.gif");
 	background-repeat: repeat;
 	font-family: 'Lucida Sans Typewriter';
-	color: white;
+	color: black;
 	border: none;
 }
 
