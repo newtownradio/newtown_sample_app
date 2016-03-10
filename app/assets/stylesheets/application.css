@@ -1,10 +1,10 @@
 nav {
-  background-image: url("tumblr.white.gif");
+  background-image: url("lips.png");
 	background-repeat: repeat;
 }
 
 nav li a {
-	background-image: url("tumblr.white.gif");
+	background-image: url("lips.png");
 	background-repeat: repeat;
 	border: none;
 }
@@ -59,7 +59,7 @@ h5 {
 
 body {
 	text-align: center;
-	background-image: url("tumblr.white.gif");
+	background-image: url("animated-rainbow-image.gif");
 	background-repeat: repeat;
 	font-family: 'Lucida Sans Typewriter';
 	color: black;
