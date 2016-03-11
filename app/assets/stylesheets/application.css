@@ -17,12 +17,13 @@
 }
 
 h1 {
-	background: url("pepe_underwater.jpg");
+	background: url("animated-rainbow-image.gif");
 	background-repeat: no-repeat;
 	left: auto;
 	right: auto;
-	padding: 20%;
-	margin: 0;
+	padding: 25%;
+	margin: 15%;
+	position: relative;
 	text-align: center;
 }
 
