@@ -17,15 +17,13 @@
 }
 
 h1 {
-	background: url("rotating-emoji.gif");
+	background: url("pepe_underwater.jpg");
 	background-repeat: no-repeat;
-	padding-top: 25%;
-	padding-bottom: 50%;
+	left: auto;
+	right: auto;
+	padding: 20%;
+	margin: 0;
 	text-align: center;
-	margin-top: 15%;
-	margin-bottom: 20%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 h3 {
@@ -52,7 +50,6 @@ body {
 	text-align: center;
 	font-family: 'Lucida Sans Typewriter';
 	color: black;
-	height: 100%;
 }
 
 footer {
