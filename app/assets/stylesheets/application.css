@@ -72,16 +72,15 @@ table {
 }
 
 #notice {
-	padding: 2%;
-	color: brown;
-}
-
-thead {
 	color: black;
 }
 
-tbody {
+thead {
 	color: brown;
+}
+
+tbody {
+	color: black;
 }
 
 footer {
