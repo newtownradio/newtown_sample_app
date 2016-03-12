@@ -26,6 +26,15 @@ h1 {
 	margin-right: auto;
 }
 
+h2 {
+	padding-top: 10%;
+	font-family: 'Lucida Sans Typewriter';
+	text-align: center;
+	position: relative;
+	font-size: 4em;
+	color: green;
+}
+
 h3 {
 	padding-top: 5%;
 	font-size: 2em;
