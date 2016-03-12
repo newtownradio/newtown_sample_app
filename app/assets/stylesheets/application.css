@@ -69,21 +69,19 @@ table {
 	left: 0;
 	right: 0;
 	text-align: center;
-	padding: 5%;
 }
 
 #notice {
 	padding: 2%;
+	color: brown;
 }
 
 thead {
-	color: orange;
-	padding: 2%;
+	color: black;
 }
 
 tbody {
-	color: green;
-	padding: 2%;
+	color: brown;
 }
 
 footer {
