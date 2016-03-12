@@ -65,10 +65,10 @@ body {
 }
 
 table {
-	border: 2px solid black;
+	border: 1px solid black;
 	width: 100%;
-	left: 5%;
-	right: 5%;
+	left: 0;
+	right: 0;
 	text-align: center;
 }
 
