@@ -17,13 +17,12 @@
 }
 
 h1 {
-	padding-top: 10%;
+	padding: 10%;
 	font-family: 'Lucida Sans Typewriter';
 	font-size: 3em;
 	text-align: center;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 h2 {
@@ -70,10 +69,11 @@ table {
 	left: 0;
 	right: 0;
 	text-align: center;
+	padding: 10%;
 }
 
 thead {
-	color: red;
+	color: orange;
 }
 
 footer {
