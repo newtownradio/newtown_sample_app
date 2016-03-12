@@ -64,14 +64,16 @@ body {
 }
 
 table {
-	border: 1px solid black;
+	font-size: 1em;
 	width: 100%;
 	left: 0;
 	right: 0;
-	text-align: center;
+	text-align: left;
 }
 
 #notice {
+	top: 10%;
+	padding: 5%;
 	color: blue;
 }
 
