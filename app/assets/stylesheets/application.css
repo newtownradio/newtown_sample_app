@@ -22,6 +22,7 @@ h1 {
 	font-size: 3em;
 	text-align: center;
 	position: relative;
+	background-image: url("bitcoin_boxes.gif");
 	margin: auto;
 }
 
