@@ -33,7 +33,7 @@ h1 {
 h2 {
 	padding-top: 10%;
 	font-family: 'Lucida Sans Typewriter';
-	background-image: url("arles.omap.jpg");
+	background-repeat: no-repeat;
 	left: auto;
 	right: auto;
 	text-align: center;
