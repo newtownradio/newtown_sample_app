@@ -1,3 +1,24 @@
+#notice {
+  color: #FF69B4;
+}
+
+table {
+  padding: 5%;
+  font-size: 1em;
+  margin: auto; 
+}
+
+thead {
+  padding: 2%;
+  font-family: 'lucida sans typewriter';
+  font-size: 1em;
+  margin: auto;
+}
+
+td {
+  color: orange;
+}
+
 body {
   font-size: 13px;
   line-height: 18px;
@@ -38,10 +59,6 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
-}
-
-#notice {
-  color: green;
 }
 
 .field_with_errors {
