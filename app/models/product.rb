@@ -1,2 +1,2 @@
-class Product < ActiveRecord::Base
+class Product.all[0].name < ActiveRecord::Base
 end
