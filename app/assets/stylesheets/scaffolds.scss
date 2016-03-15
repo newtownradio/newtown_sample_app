@@ -6,14 +6,12 @@ table {
   padding: 5%;
   font-size: 1em;
   margin: auto; 
-  background-repeat: repeat;
 }
 
 #product-image {
   width: 100%;
   height: 100%;
 }
-
 
 thead {
   padding: 2%;
@@ -23,15 +21,15 @@ thead {
 }
 
 td {
-  color: orange;
+  color: #FF69B4;
 }
 
 body {
   font-size: 13px;
   line-height: 18px;
-  margin-top: 10%
-  margin-bottom: 10%
-  padding: 10%
+  margin-top: 5%
+  margin-bottom: 5%
+  padding: 5%
   text-align: center;
   font-family: 'Lucida Sans Typewriter';
   color: black;
