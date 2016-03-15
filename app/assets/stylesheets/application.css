@@ -76,6 +76,7 @@ table {
 	width: 100%;
 	padding: 2%;
 	text-align: center;
+	border: 1px solid black;
 }
 
 #notice {
