@@ -2,15 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#notice {
-	color: #FF69B4;
-	top: 0;
-}
-
 table {
 	padding: 5%;
-	font-size: 1em;
-	margin: auto; 
+	font-size: 1em; 
+	top: 0;
+	border: 2px solid black;
 }
 
 thead {
@@ -20,7 +16,4 @@ thead {
 	margin: auto;
 }
 
-td {
-	color: black;
-}
 
