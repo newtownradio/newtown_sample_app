@@ -22,11 +22,12 @@ h1 {
 	font-size: 3em;
 	text-align: center;
 	position: relative;
-	background-image: url("animated-rainbow-image.gif");
+	background-image: url("autobahnsprite.gif");
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
 	width: 100%;
+	height: auto;
 }
 
 h2 {
