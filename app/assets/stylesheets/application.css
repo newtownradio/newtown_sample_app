@@ -17,17 +17,16 @@
 }
 
 h1 {
-	padding: 3%;
+	padding: 4%;
 	font-family: 'Lucida Sans Typewriter';
 	font-size: 3em;
 	text-align: center;
 	position: relative;
-	background-image: url("autobahnsprite.gif");
+	background-image: url("8_bitsky.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	color: white;
 	width: 100%;
-	height: auto;
 }
 
 h2 {
