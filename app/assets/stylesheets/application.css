@@ -17,7 +17,7 @@
 }
 
 h1 {
-	margin-top: 0;
+	top: 0;
 	padding: 10%;
 	font-family: 'Lucida Sans Typewriter';
 	font-size: 3em;
@@ -30,7 +30,8 @@ h1 {
 }
 
 h2 {
-	padding-top: 10%;
+	padding: 10%;
+	top: 0;
 	font-family: 'Lucida Sans Typewriter';
 	background-repeat: no-repeat;
 	left: auto;
@@ -42,7 +43,7 @@ h2 {
 }
 
 h3 {
-	padding-top: 5%;
+	top: 0;
 	font-size: 2em;
 }
 
@@ -55,33 +56,30 @@ h6 {
 	padding-top: 5%;
 	font-family: 'Lucida Sans Typewriter';
 	font-size: 2em;
-	margin-top: 10%;
+	top: 0;
 }
 
 img {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 5%;
+	padding: 2%;
 }
 
 body {
-	text-align: center;
 	font-family: 'Lucida Sans Typewriter';
 	color: black;
+	text-align: center;
 }
 
 table {
 	font-size: 1em;
 	width: 100%;
-	left: 0;
-	right: 0;
-	text-align: left;
+	padding: 2%;
+	text-align: center;
 }
 
 #notice {
-	top: 10%;
-	padding: 5%;
-	color: blue;
+	top: 0;
 }
 
 thead {
