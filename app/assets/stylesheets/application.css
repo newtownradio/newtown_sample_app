@@ -72,11 +72,11 @@ body {
 }
 
 table {
+	top: 0;
 	font-size: 1em;
 	width: 100%;
-	padding: 2%;
 	text-align: center;
-	border: 1px solid black;
+	border: 3px solid black;
 }
 
 #notice {
