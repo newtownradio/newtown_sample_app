@@ -10,6 +10,9 @@
 
 .navbar-fixed-top {
 	border: 0;
+	background-image: url("seamless.jpg");
+	background-repeat: repeat;
+	background-size: cover;
 }
 
 .nav-tabs {
