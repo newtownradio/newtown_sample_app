@@ -15,7 +15,7 @@
    <% @products.each do |product| %>
      <tr colspan="3">
        <td><img src="<%= product.image_url %>" id="product-image">
-      <p id="product-link">
+      <p class="text-right">
        <td><%= link_to 'Show', product %></td>
        <td><%= link_to 'Edit', edit_product_path(product) %></td>
        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
