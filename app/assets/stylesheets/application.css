@@ -59,6 +59,8 @@ h6 {
 img {
 	text-align: center;
   padding: 1%;
+  left: auto;
+  right: auto;
 }
 
 body {
