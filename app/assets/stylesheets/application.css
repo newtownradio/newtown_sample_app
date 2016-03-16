@@ -20,26 +20,24 @@ h1 {
 	top: 0;
 	padding: 10%;
 	font-family: 'Lucida Sans Typewriter';
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
 	position: relative;
 	background-image: url("8_bitsky.jpg");
-	background-size: 100%;
+	background-size: cover;
 	color: white;
 	width: 100%;
 }
 
 h2 {
-	padding: 10%;
 	top: 0;
 	font-family: 'Lucida Sans Typewriter';
 	background-repeat: no-repeat;
-	left: auto;
-	right: auto;
+  position: relative;
 	text-align: center;
-	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 4em;
-	color: red;
 }
 
 h3 {
@@ -60,6 +58,7 @@ h6 {
 
 img {
 	text-align: center;
+  padding: 1%;
 }
 
 body {
@@ -69,11 +68,10 @@ body {
 }
 
 table {
-	top: 0;
 	font-size: 1em;
 	width: 100%;
-	text-align: center;
-	border: 3px solid black;
+	margin-left; 2%
+	color: red;
 }
 
 #notice {
@@ -82,10 +80,7 @@ table {
 
 thead {
 	color: red;
-}
-
-tbody {
-	color: black;
+	margin-left: 2%;
 }
 
 footer {
