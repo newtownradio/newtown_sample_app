@@ -81,12 +81,9 @@ body {
 }
 
 #td-links {
-	text-align: right;
+	float: right;
 	padding: 3%;
-}
-
-.alignleft {
-	float: left;
+	margin-right: 3%;
 }
 
 footer {
