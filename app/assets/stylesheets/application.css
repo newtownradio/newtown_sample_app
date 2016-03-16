@@ -76,10 +76,11 @@ body {
   width: 50%;
   height: 50%;
   text-align: center;
+  margin-left: 3%;
 }
 
 #td-links {
-	margin-right: auto;
+	text-align: right;
 }
 
 .alignright {
