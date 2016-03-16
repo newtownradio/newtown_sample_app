@@ -11,6 +11,7 @@
    <% @products.each do |product| %>
      <tr colspan="2">
        <td><img src="<%= product.image_url %>" id="product-image">
+        <hr>
       <div id="td-links">
        <p class="alignright">
        <td><%= link_to 'Show', product %></td>
