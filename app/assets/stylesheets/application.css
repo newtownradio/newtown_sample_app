@@ -59,7 +59,7 @@ img {
 	text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 3%;
+  padding: 5%;
 }
 
 body {
@@ -72,8 +72,18 @@ body {
   margin-top: 25%;
 }
 
-.text-right {
-  float: right;
+#product-image {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+#td-links {
+	margin-right: auto;
+}
+
+.alignright {
+	float: right;
 }
 
 footer {

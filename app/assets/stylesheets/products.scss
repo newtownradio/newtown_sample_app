@@ -2,18 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-table {
-	padding: 5%;
-	font-size: 1em; 
-	margin-top: 15%
-	border: 2px solid black;
+img {
+	margin-left: 5%
 }
 
-thead {
-	padding: 2%;
-	font-family: 'lucida sans typewriter';
-	font-size: 1em;
-	margin: auto;
+td {
+	text-align: right;
 }
 
-
+th {
+	margin-left: 5%;
+}
