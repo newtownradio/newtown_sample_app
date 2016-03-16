@@ -30,6 +30,7 @@ h1 {
 
 h2 {
 	top: 0;
+	margin-bottom: 0;
 	font-family: 'Lucida Sans Typewriter';
 	background-repeat: no-repeat;
   position: relative;
@@ -81,6 +82,7 @@ body {
 
 #td-links {
 	text-align: right;
+	padding: 3%;
 }
 
 .alignright {

@@ -1,16 +1,15 @@
 <p id="notice"><%= notice %></p>
-
 <h1>Merchandise</h1>
-
+<div class="page-layout">
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
   <tbody>
    <% @products.each do |product| %>
-     <tr colspan="3">
+     <tr colspan="2">
        <td><img src="<%= product.image_url %>" id="product-image">
       <div id="td-links">
        <p class="alignright">
@@ -23,7 +22,7 @@
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
 <%= link_to 'New Product', new_product_path %>
