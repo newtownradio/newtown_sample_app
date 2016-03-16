@@ -50,7 +50,7 @@ h4 {
 }
 
 h6 {
-	padding-top: 5%;
+	margin-top: 5%;
 	font-family: 'Lucida Sans Typewriter';
 	font-size: 2em;
 	top: 0;
@@ -59,8 +59,8 @@ h6 {
 img {
 	text-align: center;
   padding: 1%;
-  left: auto;
-  right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -69,20 +69,13 @@ body {
 	text-align: center;
 }
 
-table {
-	font-size: 1em;
-	width: 100%;
-	margin-left; 2%
-	color: red;
-}
-
 #notice {
-	top: 0;
+	margin-top: 15%;
 }
 
-thead {
-	color: red;
-	margin-left: 2%;
+#product-link {
+	text-align: right;
+  margin-right: auto;
 }
 
 footer {
