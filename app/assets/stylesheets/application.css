@@ -77,15 +77,11 @@ body {
 }
 
 .page-layout {
-  text-align: center;
-  padding: 5%;
-}
-
-.align-right {
-	float: right;
+  padding: 10%;
 }
 
 #td-links {
+	color: red;
 	float: right;
 	margin-right: auto;
 }
