@@ -4,17 +4,20 @@
 <table>
   <thead>
     <tr>
-      <th colspan="1"></th>
+      <th>Name</th>
+    </tr>
+      <th>Description</th>
+    <tr>
+      <th colspan="2"></th>
     </tr>
   </thead>
   <tbody>
    <% @products.each do |product| %>
-     <tr colspan="1">
-       <td><img src="<%= product.image_url %>" id="product-image">
-        <th>Description</th>
+     <tr colspan="2">
+       <td><img src="<%= product.image_url %>">
         <hr>
          <div id="td-links">
-          <p class="alignleft">
+          <p class="alignright">
            <td><%= link_to 'Show', product %></td>
            <td><%= link_to 'Edit', edit_product_path(product) %></td>
            <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>

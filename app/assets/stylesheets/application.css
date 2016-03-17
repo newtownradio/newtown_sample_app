@@ -72,21 +72,17 @@ body {
 	text-align: center;
 }
 
-.show { 
-  margin-top: 25%;
+.show {
+	padding: 20%;
 }
 
-#product-image {
-  width: 50%;
-  height: 50%;
+.page-layout {
   text-align: center;
-  margin-left: 3%;
+  padding: 5%;
 }
 
-#td-links {
-	float: right;
-	padding: 3%;
-	margin-right: 3%;
+.align-right {
+	margin-right: 0;
 }
 
 footer {
