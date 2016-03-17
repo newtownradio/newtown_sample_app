@@ -82,7 +82,12 @@ body {
 }
 
 .align-right {
-	margin-right: 0;
+	float: right;
+}
+
+#td-links {
+	float: right;
+	margin-right: auto;
 }
 
 footer {
