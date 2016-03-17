@@ -72,19 +72,11 @@ body {
 	text-align: center;
 }
 
-.show {
-	padding: 20%;
-}
-
 .page-layout {
   padding: 10%;
+  width: 100%;
 }
 
-#td-links {
-	color: red;
-	float: right;
-	margin-right: auto;
-}
 
 footer {
 	position: relative;
