@@ -77,6 +77,10 @@ body {
   width: 100%;
 }
 
+.pro-name {
+	color: blue;
+	font-family: Serif;
+}
 
 footer {
 	position: relative;
