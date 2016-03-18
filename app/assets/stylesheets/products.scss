@@ -2,14 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-img {
-	margin-left: 5%
-}
-
-td {
-	text-align: right;
-}
-
-th {
-	margin-left: 5%;
+.nav-tabs {
+  border: 0;
+	background-image: url("seamless.jpg");
+	background-repeat: repeat;
+	background-size: cover;
 }
