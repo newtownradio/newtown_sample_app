@@ -4,7 +4,6 @@
 
   <% @products.each do |product| %>
     <%= product.name %>
-    <%= product.description %>
     <img src="<%= product.image_url %>">
      <div id="td-links">
        <%= link_to 'Show', product %>
