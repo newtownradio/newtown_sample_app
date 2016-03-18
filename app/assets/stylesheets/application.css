@@ -83,6 +83,12 @@ body {
 	font-size: 2em;
 }
 
+.product-links {
+	color: red;
+	font-family: Serif;
+	font-size: 1.5em;
+}
+
 footer {
 	position: relative;
 	text-align: center;
