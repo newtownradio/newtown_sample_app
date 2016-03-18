@@ -1,28 +1,17 @@
 <p id="notice"><%= notice %></p>
 <h1>Merchandise</h1>
 <div class="page-layout">
-<table>
-  <thead>
-      <th>Name</th>
-      <hr>
-      <th>Description</th>  
-    <th colspan="2"></th>  
-  </thead>
-  <tbody>
-   <% @products.each do |product| %>
-    <tr colspan="2">
-     <td><%= product.name %></td>
-     <td><%= product.description %></td>
-     <td><img src="<%= product.image_url %>"></td>
-      <div id="td-links">
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </div> 
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+
+  <% @products.each do |product| %>
+    <%= product.name %>
+    <%= product.description %>
+    <img src="<%= product.image_url %>">
+     <div id="td-links">
+       <%= link_to 'Show', product %>
+       <%= link_to 'Edit', edit_product_path(product) %>
+       <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+     </div> 
+   <% end %>
 </div>
 <br>
 
