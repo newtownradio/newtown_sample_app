@@ -5,6 +5,7 @@
   <% @products.each do |product| %>
     <div class="product-index">  <p class="pro-name"><%= product.name %></p>
       <p class="pro-image"><img src="<%= product.image_url %>"></p>
+      <hr>
     </div>
     <div class="product-links">
        <%= link_to 'Show', product %>
