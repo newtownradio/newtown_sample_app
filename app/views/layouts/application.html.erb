@@ -11,7 +11,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
 
 </head>
 <!-- Single button -->
@@ -47,16 +48,12 @@
       </div><!-- end nav content -->
     </div><!-- end nav container -->
 </nav><!-- end navbar -->
+</div>
+<div class="radioplayer" data-src="https://streaming.radio.co/your_station/listen" data-autoplay="false" data-playbutton="true" data-volumeslider="true" data-elapsedtime="false" data-nowplaying="true" data-showplayer="false" data-volume="50" data-showartwork="true" data-bg="/images/NTR_LOGO.png"></div>
 <%= yield %>
 <footer>   
-<p>&copy; 2016</p>
-<div id="navFooter">
-  <a href="#" id="navBackToTop">
-    <div class="navFooterBackToTop">
-      <span class="navFooterBackToTopText"> Back to top</span>
-    </div>
-  </a>
-</div> 
+<p>&copy; 2016</p> 
 </footer>
 </body>
+<script>$('.radioplayer').radiocoPlayer();</script>
 </html>

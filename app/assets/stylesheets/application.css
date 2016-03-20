@@ -13,12 +13,11 @@
 }
 
 h1 {
-	margin-top: 0;
 	padding: 10%;
 	font-family: 'Lucida Sans Typewriter';
 	font-size: 4em;
 	text-align: center;
-	background-image: url("8_bitsky.jpg");
+	background-image: url("purple_art.jpg");
 	background-size: cover;
 	color: white;
 	width: 100%;
@@ -33,7 +32,7 @@ h2 {
 	margin-right: auto;
 	color: black;
 	font-size: 3em;
-	font-family: 'Cedarville Cursive', cursive; 
+	font-family: 'Lucida Sans Typewriter'; 
 }
 
 h3 {
