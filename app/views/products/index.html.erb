@@ -1,19 +1,28 @@
 <p id="notice"><%= notice %></p>
-<h1>Merchandise</h1>
-<div class="page-layout">
-
-  <% @products.each do |product| %>
-    <div class="product-index">  <p class="pro-name"><%= product.name %></p>
-      <p class="pro-image"><img src="<%= product.image_url %>"></p>
-    </div>
-    <div id="product-links">
-       <%= link_to 'Show', product %>
-       <%= link_to 'Edit', edit_product_path(product) %>
-       <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
-       <hr>
-    </div>   
-   <% end %>
+<div id="page-layout" class="img-responsive">
+<h1>Merch</h1>
 </div>
+  <div class="container-fluid">
+    <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <p class="pro-name"><%= product.name %></p> 
+        <p class="pro-image"><%= image_tag(product.image_url, class: "img-responsive") %></p>
+        <p class="pro-description"><%= product.description %> 
+        <p class="pro-color"><%= product.color %></p>
+        <hr>
+        <p class="pro-price"><%= product.price %></p>
+      
+        <div id="product-links">
+        <%= link_to 'Show', product %>
+        <%= link_to 'Edit', edit_product_path(product) %>
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
+        <hr>
+      </div><!--/links-->
+    </div><!-- /column -->
+  </div><!-- /row -->
+</div><!-- /container-->   
+   <% end %>
 <br>
 
 <%= link_to 'New Product', new_product_path %>

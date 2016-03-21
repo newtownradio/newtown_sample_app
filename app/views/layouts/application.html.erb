@@ -11,9 +11,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
-
 </head>
 <!-- Single button -->
 <body>
@@ -49,11 +46,9 @@
     </div><!-- end nav container -->
 </nav><!-- end navbar -->
 </div>
-<div class="radioplayer" data-src="https://streaming.radio.co/your_station/listen" data-autoplay="false" data-playbutton="true" data-volumeslider="true" data-elapsedtime="false" data-nowplaying="true" data-showplayer="false" data-volume="50" data-showartwork="true" data-bg="/images/NTR_LOGO.png"></div>
 <%= yield %>
 <footer>   
 <p>&copy; 2016</p> 
 </footer>
 </body>
-<script>$('.radioplayer').radiocoPlayer();</script>
 </html>
