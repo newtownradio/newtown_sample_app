@@ -12,15 +12,6 @@
 	border: 0;
 }
 
-h1 {
-	padding: 10%;
-	font-family: 'Monospace';
-	font-size: 2.5em;
-	text-align: center;
-	background-image: url("purple_header.jpg");
-	color: white;
-}
-
 h2 {
 	top: 0;
 	padding-top: 10%;
@@ -64,10 +55,30 @@ body {
 	font-family: monospace;
 }
 
-.pro-name {
+h1 {
+	font-family: 'Monospace';
+	font-size: 2.5em;
+	text-align: center;
+	background-image: url("Hot-Pink-Header.jpg");
+	background-size: cover;
+	width: 100%;
+	color: white;
+	padding: 5%;
+}
+
+#page-layout {
+	padding: 10%;
+	background-image: url("merch.png");
+	font-size: 3em;
+	color: black;
+	font-family: monospace;
+}
+
+#pro-region {
 	font-family: Serif;
 	font-size: 2em;
 	font-family: monospace;
+	padding: 3%;
 }
 
 .btn-info-outline {

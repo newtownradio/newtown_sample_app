@@ -1,11 +1,9 @@
 <p id="notice"><%= notice %></p>
-<div id="page-layout" class="img-responsive">
-<h1>Merch</h1>
-</div>
+<div id="page-layout" class="img-responsive">Merch</div>
 <div class="container-fluid" id="pro-region">
  <div class="row">
    <% @products.each do |product| %>
-     <div class="col-sm-8 col-md-4">
+     <div class="col-md-12">
       <h1><%= product.name %></h1>
      <%= image_tag(product.image_url, class: "img-responsive") %>
       <p><%= product.description %></p>
