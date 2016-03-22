@@ -2,25 +2,32 @@
 <div id="page-layout" class="img-responsive">
 <h1>Merch</h1>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="pro-region">
  <div class="row">
    <% @products.each do |product| %>
-     <div class="col-sm-2 col-md-4">
-     <%= image_tag(product.image_url, class: "img-responsive") %>
+     <div class="col-sm-8 col-md-4">
       <h1><%= product.name %></h1>
+     <%= image_tag(product.image_url, class: "img-responsive") %>
       <p><%= product.description %></p>
        <p><%= product.price %></p>
-       <strong>$ 3,000.00</strong>
+       <strong>$ 0.00</strong>
        <p><%= product.color %></p>
-     </div><!-- /col --> 
- </div>
-</div>
-<div id="product-links">
+       <hr>
+       <div id="product-links">
+         <button type="button" class="btn btn-info-outline">
   <%= link_to 'Show', product %>
+         </button>
+         <button type="button" class="btn btn-info-outline">
   <%= link_to 'Edit', edit_product_path(product) %>
+         </button>
+         <button type="button" class="btn btn-info-outline">
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
-  <hr>
-</div><!--/links--> 
+         </button> 
+       <hr>
+       </div><!--/links--> 
+     </div><!-- /col --> 
+ </div><!-- /row -->
+</div><!-- /container -->
    <% end %>
 <br>
 

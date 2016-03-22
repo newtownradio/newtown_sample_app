@@ -14,13 +14,11 @@
 
 h1 {
 	padding: 10%;
-	font-family: 'Lucida Sans Typewriter';
-	font-size: 4em;
+	font-family: 'Monospace';
+	font-size: 2.5em;
 	text-align: center;
 	background-image: url("purple_header.jpg");
-	background-size: cover;
 	color: white;
-	width: 100%;
 }
 
 h2 {
@@ -47,7 +45,7 @@ h4 {
 
 h6 {
 	margin-top: 5%;
-	font-family: 'Lucida Sans Typewriter';
+	font-family: monospace;
 	font-size: 2em;
 	top: 0;
 	padding-top: 10%;
@@ -61,27 +59,25 @@ img {
 }
 
 body {
-	font-family: 'Lucida Sans Typewriter';
 	color: black;
 	text-align: center;
-}
-
-.page-layout {
-  padding: 10%;
-  width: 100%;
+	font-family: monospace;
 }
 
 .pro-name {
-	color: blue;
 	font-family: Serif;
 	font-size: 2em;
+	font-family: monospace;
+}
+
+.btn-info-outline {
+	background-image: url("purple_header.jpg");
 }
 
 #product-links {
   padding: 3%;
 	font-family: Serif;
 	font-size: 1.5em;
-	color: purple;
 }
 
 footer {
@@ -93,10 +89,6 @@ footer {
 	font-size: 1em;
 }
 
-.navFooterBackToTopText {
-  bottom: 0;
-  visibility: hidden;
-}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
