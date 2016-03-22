@@ -2,26 +2,27 @@
 <div id="page-layout" class="img-responsive">
 <h1>Merch</h1>
 </div>
-  <div class="container-fluid">
-    <div class="row">
-    <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
-        <p class="pro-name"><%= product.name %></p> 
-        <p class="pro-image"><%= image_tag(product.image_url, class: "img-responsive") %></p>
-        <p class="pro-description"><%= product.description %> 
-        <p class="pro-color"><%= product.color %></p>
-        <hr>
-        <p class="pro-price"><%= product.price %></p>
-      
-        <div id="product-links">
-        <%= link_to 'Show', product %>
-        <%= link_to 'Edit', edit_product_path(product) %>
-        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
-        <hr>
-      </div><!--/links-->
-    </div><!-- /column -->
-  </div><!-- /row -->
-</div><!-- /container-->   
+
+<div class="container-fluid">
+ <div class="row">
+   <% @products.each do |product| %>
+     <div class="col-sm-2 col-md-4">
+      <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+      <h1><%= product.name %></h1>
+      <p><%= product.description %></p>
+       <p><%= product.color %></p>
+       <p><%= product.price %></p>
+       <strong>$ 3,000.00</strong>
+     </div><!-- /col -->
+   <% end %>
+ </div>
+</div>
+<div id="product-links">
+  <%= link_to 'Show', product %>
+  <%= link_to 'Edit', edit_product_path(product) %>
+  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
+  <hr>
+</div><!--/links--> 
    <% end %>
 <br>
 
