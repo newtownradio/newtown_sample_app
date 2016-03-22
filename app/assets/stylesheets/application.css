@@ -57,28 +57,29 @@ body {
 
 h1 {
 	font-family: 'Monospace';
-	font-size: 2.5em;
+	font-size: 1.5em;
 	text-align: center;
-	background-image: url("gray_background.jpg");
-	background-size: cover;
-	width: 100%;
-	color: white;
-	padding: 4%;
+	color: black;
+	font-size: 2.5em;
+	font-family: monospace;
+	border: 4px dashed black;
+	padding: 5%;
+	margin-top: 2%;
 }
 
 #page-layout {
+	margin-top: 8%;
 	padding: 10%;
 	background-image: url("merch.png");
-	font-size: 3em;
+	font-size: 2.5em;
 	color: black;
 	font-family: monospace;
+  width: 100%;
 }
 
-#pro-region {
-	font-family: Serif;
-	font-size: 2em;
+#pro-place {
 	font-family: monospace;
-	padding: 3%;
+	font-size: 2.5em;
 }
 
 .btn-info-outline {

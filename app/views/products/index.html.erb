@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <div id="page-layout" class="img-responsive">Merch</div>
-<div class="container-fluid" id="pro-region">
+<div class="container" id="pro-place">
  <div class="row">
    <% @products.each do |product| %>
      <div class="col-md-12">
@@ -8,7 +8,7 @@
      <%= image_tag(product.image_url, class: "img-responsive") %>
       <p><%= product.description %></p>
        <p><%= product.price %></p>
-       <strong>$ 0.00</strong>
+       <strong>$0.99</strong>
        <p><%= product.color %></p>
        <hr>
        <div id="product-links">
