@@ -1,2 +1,6 @@
 <h2>Featured Product:</h2>
+<% if defined?(@featured_product.name) %>
 <%= @featured_product.name %>
+<% else %>
+No product
+<% end %>
