@@ -1,16 +1,19 @@
 <p id="notice"><%= notice %></p>
 <div id="page-layout" class="img-responsive">Merch</div>
-<div class="container" id="pro-place">
- <div class="row">
-   <% @products.each do |product| %>
-     <div class="col-md-12">
-      <h1><%= product.name %></h1>
-     <%= image_tag(product.image_url, class: "img-responsive") %>
-      <p><%= product.description %></p>
-       <p><%= product.price %></p>
-       <p><%= product.colour %></p>
-       <hr>
-       <div id="product-links">
+<div class="carousel-inner" role="listbox">
+  <% @products.each do |product| %>
+  <%= render @products %>
+  <div class="item<%= " active" if product == @products.first %>">
+   <%= image_tag(product.image_url%>
+    <div class="carousel-caption">
+     <%= product.name %>
+     <%= product.description %>
+     <%= product.price %>
+     <%= product.colour %>
+   </div>
+ </div>
+<hr>
+<div id="product-links">
          <button type="button" class="btn btn-info-outline">
   <%= link_to 'Show', product %>
          </button>
@@ -20,11 +23,8 @@
          <button type="button" class="btn btn-info-outline">
   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> 
          </button> 
-       <hr>
-       </div><!--/links--> 
-     </div><!-- /col --> 
- </div><!-- /row -->
-</div><!-- /container -->
+<hr>
+</div><!--/links--> 
    <% end %>
 <br>
 
