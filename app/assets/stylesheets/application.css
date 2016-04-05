@@ -69,6 +69,8 @@ h1 {
 #carousel-example-generic {
 	color: white;
 	background-color: gray;
+  font-family: monospace;
+  font-size: 1em;
   margin: 5%;
   padding: 1%;
 }
