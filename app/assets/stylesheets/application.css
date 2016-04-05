@@ -67,12 +67,8 @@ h1 {
 }
 
 #carousel-example-generic {
-	padding: 2%;
-	margin-top: 5%;
-}
-
-#carousel-inner {
-	padding: 2%;
+	padding: 10%;
+	margin: 10%;
 }
 
 #page-layout {
