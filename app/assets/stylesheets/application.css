@@ -66,6 +66,15 @@ h1 {
 	border: 4px dashed black;
 }
 
+#carousel-example-generic {
+	padding: 2%;
+	margin-top: 5%;
+}
+
+#carousel-inner {
+	padding: 2%;
+}
+
 #page-layout {
 	margin-top: 5%;
 	padding: 10%;
