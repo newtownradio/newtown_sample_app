@@ -72,7 +72,9 @@ h1 {
   font-family: monospace;
   font-size: 1em;
   margin: 5%;
-  padding: 1%;
+  height: 300px;
+  width: 500px;
+  padding: 5%;
 }
 
 #page-layout {
