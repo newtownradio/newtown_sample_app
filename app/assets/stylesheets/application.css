@@ -67,8 +67,10 @@ h1 {
 }
 
 #carousel-example-generic {
-	color: red;
-	background: url("/assets/cheap_diagonal_fabric.png");
+	color: white;
+	background-color: red;
+  margin: 5%;
+  padding: 2%;
 }
 
 #page-layout {
