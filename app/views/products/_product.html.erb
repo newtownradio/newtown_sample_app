@@ -1,8 +1,6 @@
 <div class="container" id="pro-place">
-<div class="row">
-  <div class="col-md-12">
     <% @products.each do |product| %>
-    <img src="<%= @product.image_url %>">
+    <%= @product.image_url %>
     <%= product.name %>
     <%= product.description %>
     <%= product.colour %>
