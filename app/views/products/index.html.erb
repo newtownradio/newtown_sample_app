@@ -2,10 +2,10 @@
 <div id="page-layout" class="img-responsive">Merch</div>
 <div class="container" id="pro-place">
 <div class="row">
-  <div class="col-md-12">
-  <% @products.each do |product| %>
   <%= render @products %>
-  <% end %>
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
+</div><!-- /row -->
+</div><!-- /container -->
