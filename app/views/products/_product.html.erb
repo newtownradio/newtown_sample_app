@@ -1,11 +1,11 @@
-<%= render @products %>
+<div id="pro-place">s
     <%= product.name %>
     <%= product.description %>
     <%= @product.image_url %>
     <%= product.colour %>
 <% end %>
-<br>   
+<br>
     <%= link_to 'Show', product %>
     <%= link_to 'Edit', edit_product_path(product) %>
      <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-<% end %>
+</div>
