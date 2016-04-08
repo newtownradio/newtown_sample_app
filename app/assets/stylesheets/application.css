@@ -90,13 +90,6 @@ h1 {
 	font-family: monospace;
 }
 
-#pro-place {
-	font-family: monospace;
-	font-size: 2em;
-	max-width: 100%;
-	height: auto;
-}
-
 .btn-info-outline {
 	background-image: url("purple_header.jpg");
 }
