@@ -62,7 +62,7 @@ h1 {
 	font-family: monospace;
 	padding: 10%;
 	position: relative;
-	border: 4px thick black;
+	border: 3px solid black;
 }
 
 #carousel-example-generic {
