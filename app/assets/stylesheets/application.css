@@ -92,7 +92,9 @@ h1 {
 
 #pro-place {
 	font-family: monospace;
-	font-size: 2.5em;
+	font-size: 2em;
+	max-width: 100%;
+	height: auto;
 }
 
 .btn-info-outline {
