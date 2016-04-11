@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'static_pages/products'
+  get '/products/:id', to: 'products#show'
 
-  resources :products, :orders
+  resources :products
   get 'static_pages/featured'
 
   get 'static_pages/calendar'
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'products/index'
+  root 'products#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
