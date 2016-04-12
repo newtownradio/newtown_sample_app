@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   resources :products
+  get '/static_pages/landing_page'
+
   get 'static_pages/featured'
 
   get 'static_pages/calendar'
