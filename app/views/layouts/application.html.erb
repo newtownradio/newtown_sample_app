@@ -14,38 +14,36 @@
 </head>
 <!-- Single button -->
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation">
-    <div class="container-fluid">
-       <div class="navbar-header">
-        <a class="navbar-brand pull-left img-responsive"></a>
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-           <span class="sr-only">Toggle Navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-       </div>
-       <div class="navbar-collapse collapse">
-         <ul class="nav navbar-nav navbar-right nav-tabs">
-          <li><%= link_to "Newtown Radio", static_pages_index_path %></a> 
-          <li><%= link_to "About", static_pages_about_path %></a>
-          <li><%= link_to "Featured",static_pages_featured_path %></a>
-          <li class="active"><a href="https://newtown-radio.herokuapp.com/products/">Products</a>  
-          <li class="dropdown">
-             <a href="https://newtown-radio.herokuapp.com/static_pages/calendar" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-               Calendar <span class="caret"></span>
-             </a>
-             <ul class="dropdown-menu">
-               <li><a href="">Schedule</a></li>
-               <li><a href="">Get Alerts</a></li>
-             </ul>
-          </li>
-         </li>
-        </ul>
-      </div><!-- end nav content -->
-    </div><!-- end nav container -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand pull-left img-responsive"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right nav-tabs">
+        <li><%= link_to "Newtown Radio", static_pages_index_path %></a> 
+        <li><%= link_to "About", static_pages_about_path %></a>
+        <li><%= link_to "Featured",static_pages_featured_path %></a>
+        <li class="active"><a href="https://newtown-radio.herokuapp.com/products/">Products</a>  
+        <li class="dropdown">
+          <a href="https://newtown-radio.herokuapp.com/static_pages/calendar" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calendar<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="">Schedule</a></li>
+            <li><a href="">Get Alerts</a></li>
+          </ul>
+        </li>
+        </li>
+      </ul>
+    </div><!-- end nav content -->
+  </div><!-- end nav container -->
 </nav><!-- end navbar -->
-</div>
 <%= yield %>
 <footer>   
 <p>&copy; 2016</p> 
