@@ -35,6 +35,11 @@
       </ul>
     </div><!-- end nav content -->
   </div><!-- end nav container -->
+  <%= form_tag("/products", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
 </nav><!-- end navbar -->
 <%= yield %>
 <footer>   
