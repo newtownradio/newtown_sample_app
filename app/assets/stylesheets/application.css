@@ -12,18 +12,13 @@
 	border: 0;
 }
 
-.product-form {
-	color: transparent;
-	font-family: monospace;
-}
-
 .description-box {
-	color: black;
+	color: purple;
 	font-family: monospace;
 }
 
 .test {
-  background-color: purple;
+  background-color: black;
   color: white;
   font-family: monospace;
 }
