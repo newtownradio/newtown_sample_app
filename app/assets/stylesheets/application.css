@@ -12,6 +12,28 @@
 	border: 0;
 }
 
+.product-form {
+	color: transparent;
+	font-family: monospace;
+}
+
+.description-box {
+	color: red;
+	font-family: monospace;
+}
+
+.draft {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
+
+.test {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
+
 h2 {
 	top: 0;
 	padding-top: 10%;
