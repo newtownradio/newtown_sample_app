@@ -23,6 +23,12 @@
   font-family: monospace;
 }
 
+#thank-you-box {
+	text-align: center;
+	left: auto;
+	right: auto;
+}
+
 h2 {
 	top: 0;
 	padding-top: 10%;
