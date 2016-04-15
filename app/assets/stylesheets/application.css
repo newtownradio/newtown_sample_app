@@ -23,10 +23,18 @@
   font-family: monospace;
 }
 
-#thank-you-box {
+h1 {
+	top: 0;
+	margin: 10%;
+	padding: 10%;
+	background-repeat: no-repeat;
+  position: relative;
 	text-align: center;
-	left: auto;
-	right: auto;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-size: 3em;
+	font-family: 'Lucida Sans Typewriter'; 
 }
 
 h2 {
@@ -69,16 +77,6 @@ body {
 	color: black;
 	text-align: center;
 	font-family: monospace;
-}
-
-h1 {
-	font-family: 'Monospace';
-	font-size: 1.5em;
-	color: black;
-	font-family: monospace;
-	padding: 10%;
-	position: relative;
-	border: 2px solid black;
 }
 
 #carousel-example-generic {
