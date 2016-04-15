@@ -36,10 +36,10 @@
     </div><!-- end nav content -->
   </div><!-- end nav container -->
   <%= form_tag("/products", method: "get", class: "product-form") do %>
-  <%= label_tag(:q, "Search for:", class: "description-box") %>
-  <%= text_field_tag(:q, class: "draft") %>
+  <%= label_tag(:q, class: "description-box") %>
+  <%= text_field_tag(:q, "Search for:") %>
   <%= submit_tag("Search", class: "test") %>
-<% end %>
+  <% end %>
 </nav><!-- end navbar -->
 <%= yield %>
 <footer>   

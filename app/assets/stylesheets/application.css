@@ -18,18 +18,12 @@
 }
 
 .description-box {
-	color: red;
+	color: purple;
 	font-family: monospace;
 }
 
-.draft {
-  background-color: black;
-  color: white;
-  font-family: monospace;
-}
-
 .test {
-  background-color: black;
+  background-color: purple;
   color: white;
   font-family: monospace;
 }
