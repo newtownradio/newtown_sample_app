@@ -21,5 +21,5 @@ def thank_you
      ActionMailer::Base.mail(:from => @email,
        :to => 'colin.ilgen@gmail.com',
        :subject => "A new contact form message from #{@name}",
-       :body => @message).deliver
+       :body => @message).deliver_now
  end
