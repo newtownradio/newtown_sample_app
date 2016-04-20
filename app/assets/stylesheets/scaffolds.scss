@@ -1,19 +1,13 @@
-table {
-  padding: 5%;
-  font-size: 1em; 
-}
-
 body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  padding: 2%;
-  text-align: center;
-  font-family: 'Lucida Sans Typewriter';
-  color: black;
 }
 
 p, ol, ul, td {
-  font-family: 'Lucida Sans Typewriter';
+  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -41,6 +35,10 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
+}
+
+#notice {
+  color: green;
 }
 
 .field_with_errors {
