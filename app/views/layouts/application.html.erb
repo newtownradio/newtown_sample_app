@@ -35,14 +35,14 @@
         <li><%= link_to "Calendar",static_pages_calendar_path %></li>
       </ul>
       <ul class="nav pull-right">
-  <li>
+        <li>
   <% if user_signed_in? %>
     <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
   <% else %>
     <%= link_to('Login', new_user_session_path) %>
   <% end %>
-  </li>
-</ul>
+        </li>
+      </ul>
     </div><!-- end nav content -->
   </div><!-- end nav container -->
   <%= form_tag("/products", method: "get") do %>
