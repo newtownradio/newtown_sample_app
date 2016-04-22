@@ -14,7 +14,6 @@
 </head>
 <!-- Single button -->
 <body>
-<flash>Welcome to Newtown Radio</flash>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -51,9 +50,12 @@
   <%= submit_tag("Search", class: "test") %>
   <% end %>
 </nav><!-- end navbar -->
+<flash>Welcome to Newtown Radio</flash>
 <%= yield %>
+<div class="col-sm-12">
 <footer>   
 <p>&copy; 2016</p> 
 </footer>
+</div>
 </body>
 </html>
