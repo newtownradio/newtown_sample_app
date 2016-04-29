@@ -73,6 +73,11 @@
 	font-family: monospace;
 }
 
+.spacing {
+	margin-top: 5%;
+	padding: 5%;
+}
+
 p {
 	max-width: 720px;
 	margin-left: auto;
