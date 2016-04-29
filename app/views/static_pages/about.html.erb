@@ -1,3 +1,4 @@
+%= flash[:notice] %>
 <h1><%= image_tag("radio_strip.png", class:"img-responsive")%></h1>
 <p><b>Newtown Radio</b> is a Brooklyn-based Internet radio station dedicated to sharing the great music that the neighborhoods around Newtown Creek — Williamsburg, Greenpoint, Bushwick, Long Island City, Ridgewood — create and enjoy.</p>
 <p><b>FAQ</b></p>
@@ -13,8 +14,6 @@
 <p>Other questions, get in touch with us!</p>
 
 <h1><b>Contact</b></h1>
-
-<%= flash[:notice] %>
 
 <%= form_tag('/static_pages/thank_you') do %>
 <div class="row" id="contact-form">
