@@ -1,8 +1,10 @@
+<div class="col-sm-12">
 <div class="show">
 <p id="notice"><%= notice %></p>
-<p>
+<h1><p>
   <img src="<%= @product.image_url %>">
-</p>
+  <a><span class="glyphicon glyphicon-th"></span></a>
+</p></h1>
 <p>
   <strong>Product Name:</strong>     <%= @product.name %>
 </p>
@@ -26,6 +28,7 @@
 	<%= @product.price %>
 </p>
 
+</div>
 </div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
