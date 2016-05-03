@@ -179,8 +179,10 @@ body {
 }
 
 .btn-info-outline {
-	background-image: url("purple_header.jpg");
 	color: #c3a343;
+	background: -webkit-linear-gradient(transparent, transparent),
+    url(http://theblogmarket.co/gold-texture-image.png) repeat;
+    background: -o-linear-gradient(transparent, transparent);
 }
 
 #product-links {
