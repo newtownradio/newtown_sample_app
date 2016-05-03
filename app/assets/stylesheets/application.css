@@ -78,6 +78,23 @@
 	padding: 5%;
 }
 
+.btn {
+	color: white;
+}
+
+.thumbnail {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+}
+
+.caption {
+	text-align: center;
+	display: block;
+	font-family: monospace;
+}
+
 p {
 	max-width: 720px;
 	margin-left: auto;
