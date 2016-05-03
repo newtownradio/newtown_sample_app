@@ -1,9 +1,9 @@
 <div class="show">
-  <p id="notice"><%= notice %></p>
+  <p><%= notice %></p>
    <div class="row">
      <div class="col-xs-12">
        <div class="thumbnail">
-         <p><%= @product.image_url %></p>
+         <p><%= image_tag(@product.image_url, class: "img-responsive") %></p>
            <div class="caption">
             <h3><%= @product.name %></h3>
             <p><%= @product.description %></p>

@@ -41,9 +41,10 @@
 }
 
 .btn {
-	background-image: url("purple_header.jpg");
-	color: purple;
-	font-weight: 2em;
+	color: #c3a343;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(http://theblogmarket.co/gold-texture-image.png) repeat;
+    background: -o-linear-gradient(transparent, transparent);
 }
 
 #session-new {
@@ -76,10 +77,6 @@
 .spacing {
 	margin-top: 15%;
 	padding: 5%;
-}
-
-.btn {
-	color: white;
 }
 
 .thumbnail {
