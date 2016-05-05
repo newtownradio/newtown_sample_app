@@ -6,15 +6,6 @@ Rails.application.routes.draw do
   end
   resources :users
 
-  @product.comments
-  def create
-    @product = Product.find(params[:product_id])
-    @comment = @product.comments.new(comment_params)
-    @comment.user = current_user
-    @comment.save
-    redirect_to product_path(@product)
-  end
-
   get '/static_pages/landing_page'
 
   get 'static_pages/featured'
