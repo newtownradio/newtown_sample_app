@@ -9,7 +9,7 @@
             <p><%= @product.description %></p>
             <p><%= @product.colour %></p>
             <p><%= @product.price %><p>
-            <p><%= @product.average_rating %></p>
+            <div class="rated" data-score="<%= @product.average_rating %>"></div>
             <%= render 'new_comment' %>
             <%= render 'comments' %>
             <p><a href="#" class="btn btn-primary" role="button">Buy</a>
