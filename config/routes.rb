@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+
+  resources :products do
+    resources :comments
+  end
   resources :users
-  resources :products
+
+  @product.comments
+  def create
+    @product = Product.find(params[:product_id])
+    @comment = @product.comments.new(comment_params)
+    @comment.user = current_user
+    @comment.save
+    redirect_to product_path(@product)
+  end
 
   get '/static_pages/landing_page'
 
