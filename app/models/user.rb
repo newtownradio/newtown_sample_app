@@ -5,3 +5,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :orders
 end
+
+class AddAdminFlagToUsers < ActiveRecord::Migration
+  def change
+    add_column :users, :admin, :boolean, default: false, null: false
+  end
+end
