@@ -12,6 +12,7 @@
             <div class="rated" data-score="<%= @product.average_rating %>"></div>
             <%= render 'new_comment' %>
             <%= render 'comments' %>
+            <%= will_paginate @comments %>
             <p><a href="#" class="btn btn-primary" role="button">Buy</a>
            </div>
        </div>
