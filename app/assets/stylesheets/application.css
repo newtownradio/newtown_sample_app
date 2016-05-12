@@ -10,6 +10,7 @@
 }
 
 .navbar a {
+	margin-left: 10%;
 	color: purple;
 	text-decoration: none;
 }
