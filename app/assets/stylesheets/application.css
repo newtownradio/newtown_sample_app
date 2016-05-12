@@ -6,6 +6,7 @@
     right: auto;
     text-align: center;
     margin: auto;
+    outline: none;
 }
 
 .navbar a {
@@ -82,7 +83,7 @@ body {
 }
 
 .spacing {
-	padding; 1%
+	padding: 1%;
 }
 
 .thumbnail {
