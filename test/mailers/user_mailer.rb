@@ -12,7 +12,7 @@ def thank_you
   @name = params[:name]
   @email = params[:email]
   @message = params[:message]
-  UserMailer.contact_form(@name, @email, @message).deliver
+  UserMailer.contact_form(@name, @email, @message).deliver_now
 end
 
 end

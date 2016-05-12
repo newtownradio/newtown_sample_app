@@ -8,13 +8,23 @@
     margin: auto;
 }
 
-.navbar-fixed-top {
-	border: 0;
+.navbar a {
+	color: purple;
+	text-decoration: none;
 }
 
-.description-box {
-	color: purple;
-	font-family: monospace;
+.navbar-fixed-top {
+    background-image: url("gplay.png");
+    background-repeat: repeat;
+}
+
+body { 
+  padding-top: 95px; 
+  background-image: url("gplay.png");
+  background-repeat: repeat;
+  color: black;
+  text-align: center;
+  font-family: monospace;
 }
 
 .test {
@@ -41,10 +51,7 @@
 }
 
 .btn {
-	color: #c3a343;
-    background: -webkit-linear-gradient(transparent, transparent),
-    url(http://theblogmarket.co/gold-texture-image.png) repeat;
-    background: -o-linear-gradient(transparent, transparent);
+	color: black;
 }
 
 #session-new {
@@ -75,8 +82,7 @@
 }
 
 .spacing {
-	margin-top: 15%;
-	padding: 5%;
+	padding; 1%
 }
 
 .thumbnail {
@@ -103,7 +109,6 @@ p {
 
 h1 {
 	margin-top: 10%;
-	padding: 5%;
     position: relative;
 	width: 100%;
 	color: black;
@@ -113,7 +118,6 @@ h1 {
 
 h2 {
 	margin-top: 10%;
-	padding: 5%;
 	color: black;
 	margin-left: auto;
 	margin-right: auto;
@@ -134,23 +138,14 @@ h4 {
 }
 
 h6 {
-	margin-top: 5%;
 	font-family: monospace;
 	font-size: 2em;
-	top: 0;
-	padding-top: 8%;
 }
 
 img {
 	text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-body {
-	color: black;
-	text-align: center;
-	font-family: monospace;
 }
 
 #carousel-example-generic {
@@ -170,8 +165,7 @@ body {
  }
 
 #page-layout {
-	margin-top: 5%;
-	padding: 10%;
+	padding: 5%;
 	background-image: url("merch.png");
 	font-size: 2.5em;
 	color: black;
