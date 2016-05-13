@@ -10,8 +10,8 @@ end
 
 def welcome(user)
 	@appname = "Newtown Radio"
-	mail( :to => user.email, 
-		  :subject => "Welcome to #{@appname}!")
+	mail(:to => user.email, 
+		 :subject => "Welcome to #{@appname}!")
 end
 
 def thank_you
