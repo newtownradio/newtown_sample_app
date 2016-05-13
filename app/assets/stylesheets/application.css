@@ -1,21 +1,9 @@
-.navbar-brand {
-    background: url("NTR_LOGO.png") left / contain no-repeat;
-    position: fixed;
-    width: 100%;
-    left: auto;
-    right: auto;
-    text-align: center;
-    margin: auto;
-    outline: none;
-}
-
 .navbar-header {
   outline: 0;
 }
+
 .navbar a {
-	margin-left: 2%;
-	color: purple;
-	
+	color: purple;	
 }
 
 .navbar-fixed-top {
