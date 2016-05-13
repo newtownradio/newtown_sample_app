@@ -15,10 +15,14 @@
   margin-bottom: 1%;
 }
 
+.navbar-toggle {
+	outline: 0;
+	border: 0;
+	box-shadow: none;
+}
+
 body { 
   padding-top: 115px; 
-  background-image: url("gplay.png");
-  background-repeat: repeat;
   color: black;
   text-align: center;
   font-family: monospace;
@@ -34,7 +38,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 400px;
+	width: 320px;
 	display: block;
 	color: black;
 }
@@ -49,6 +53,7 @@ body {
 
 .btn {
 	color: black;
+	outline: 0;
 }
 
 #session-new {
@@ -169,10 +174,6 @@ img {
 	font-family: monospace;
 }
 
-.btn-info-outline {
-	color: #c3a343;
-}
-
 #product-links {
   padding: 3%;
 	font-family: Serif;
@@ -188,6 +189,14 @@ footer {
 	font-size: 1em;
 }
 
+
+* MEDIA QUERY */
+
+@media only screen and (max-device-width: 320px) {
+			[class*="col-"] {
+        width: 70%;
+    }
+  }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
