@@ -16,6 +16,12 @@
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
+    <form class="navbar-form pull-right" role="search">
+      <%= form_tag("/products", method: "get") do %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Search", class: "test") %>
+      <% end %>
+    </form>
     <div class="navbar-header pull-left"> 
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -38,12 +44,6 @@
           </li>
       </ul>   
     </div><!-- end nav collapse -->
-    <form class="navbar-form pull-right" role="search">
-      <%= form_tag("/products", method: "get") do %>
-      <%= text_field_tag(:q) %>
-      <%= submit_tag("Search", class: "test") %>
-      <% end %>
-    </form>
 </nav><!-- end navbar -->
 <div class="spacing">
 <% if alert %>

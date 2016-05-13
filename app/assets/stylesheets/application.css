@@ -2,7 +2,6 @@
 	background-image: url("fake_brick.png");
 	background-color: black;
 	border: 0;
-	max-height: 50px;
 }
 
 .navbar-header {
@@ -12,11 +11,12 @@
 .navbar-form {
   float: right;
   border: 0;
-  margin-top: 1px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 body { 
-  padding-top: 205px; 
+  padding-top: 115px; 
   background-image: url("gplay.png");
   background-repeat: repeat;
   color: black;
