@@ -18,7 +18,12 @@
 .navbar-toggle {
 	outline: 0;
 	border: 0;
-	box-shadow: none;
+}
+
+.navbar-collapse {
+	outline: 0;
+	border: 0;
+	width: 100%;
 }
 
 body { 
@@ -190,13 +195,7 @@ footer {
 }
 
 
-* MEDIA QUERY */
 
-@media only screen and (max-device-width: 320px) {
-			[class*="col-"] {
-        width: 70%;
-    }
-  }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
