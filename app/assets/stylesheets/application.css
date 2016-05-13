@@ -9,20 +9,27 @@
     outline: none;
 }
 
+.navbar-header {
+  outline: 0;
+}
 .navbar a {
 	margin-left: 2%;
 	color: purple;
-	text-decoration: none;
+	
 }
 
 .navbar-fixed-top {
-    background-image: url("gplay.png");
-    background-repeat: repeat;
+    background-color: black;
+    box-shadow: none;
 }
 
+.navbar-form {
+	outline: 0;
+	box-shadow: none;
+}
 
 body { 
-  padding-top: 95px; 
+  padding-top: 200px; 
   background-image: url("gplay.png");
   background-repeat: repeat;
   color: black;
