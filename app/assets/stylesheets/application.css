@@ -1,23 +1,21 @@
+.navbar-default {
+	background-image: url("fake_brick.png");
+	background-color: black;
+	border: 0;
+}
+
 .navbar-header {
-  outline: 0;
-}
-
-.navbar a {
-	color: purple;	
-}
-
-.navbar-fixed-top {
-    background-color: transparent;
-    box-shadow: none;
+  border: 0;
 }
 
 .navbar-form {
-	outline: 0;
-	box-shadow: none;
+  margin: auto;
+  padding-bottom: 3%;
+  border: 0;
 }
 
 body { 
-  padding-top: 200px; 
+  padding-top: 215px; 
   background-image: url("gplay.png");
   background-repeat: repeat;
   color: black;
@@ -106,7 +104,7 @@ p {
 }
 
 h1 {
-	margin-top: 10%;
+	margin-top: 15%;
     position: relative;
 	width: 100%;
 	color: black;
@@ -115,7 +113,7 @@ h1 {
 }
 
 h2 {
-	margin-top: 10%;
+	margin-top: 15%;
 	color: black;
 	margin-left: auto;
 	margin-right: auto;

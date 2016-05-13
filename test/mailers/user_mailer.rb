@@ -8,6 +8,12 @@ def contact_form(email, name, message)
      :subject => "A new contact form message from #{name}")
 end
 
+def welcome(user)
+	@appname = "Newtown Radio"
+	mail( :to => user.email, 
+		  :subject => "Welcome to #{@appname}!")
+end
+
 def thank_you
   @name = params[:name]
   @email = params[:email]
