@@ -10,7 +10,7 @@
 }
 
 .navbar a {
-	margin-left: 10%;
+	margin-left: 2%;
 	color: purple;
 	text-decoration: none;
 }
@@ -19,6 +19,7 @@
     background-image: url("gplay.png");
     background-repeat: repeat;
 }
+
 
 body { 
   padding-top: 95px; 
