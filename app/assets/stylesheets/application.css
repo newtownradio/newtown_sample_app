@@ -194,7 +194,13 @@ footer {
 	font-size: 1em;
 }
 
+/* MEDIA QUERY */
 
+@media only screen and (max-device-width: 400px) {
+			[class*=".search-bar"] {
+        width: 50%;
+    }
+  }
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
