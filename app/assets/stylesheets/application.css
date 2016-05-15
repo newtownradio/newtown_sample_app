@@ -129,11 +129,11 @@ h1 {
 
 h2 {
 	margin-top: 35%;
-	color: white;
+	color: purple;
 	font-size: 2em;
 	font-family: monospace;
 	width: 100%;
-	position: relative;
+	position: relative;git
 }
 
 h3 {
@@ -174,10 +174,13 @@ img {
  }
 
 #page-layout {
-	padding: 5%;
 	font-size: 2.5em;
 	color: black;
 	font-family: monospace;
+	background-repeat: no-repeat;
+	margin: auto;
+	text-align: center;
+	position: relative;
 }
 
 #product-links {
