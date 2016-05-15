@@ -130,12 +130,10 @@ h1 {
 h2 {
 	margin-top: 35%;
 	color: white;
-	background-color: #85001b;
 	font-size: 2em;
 	font-family: monospace;
 	width: 100%;
 	position: relative;
-	padding: 5%;
 }
 
 h3 {
