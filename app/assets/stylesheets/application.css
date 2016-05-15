@@ -1,9 +1,6 @@
 .navbar-default {
-	background-image: url("supreme.basquiet.jpg");
-    background-repeat: repeat;
-	background-color: url("vinyl.png");
 	border: 0;
-	height: 240px;
+	height: 60px;
 }
 
 .navbar-header {
@@ -33,7 +30,6 @@ body {
   color: black;
   text-align: center;
   font-family: monospace;
-  background-image: url("fluffy-dogs.png");
 }
 
 .test {
