@@ -60,8 +60,9 @@ body {
 }
 
 .btn {
-	color: black;
+	color: white;
 	outline: 0;
+
 }
 
 #session-new {
@@ -128,13 +129,13 @@ h1 {
 
 h2 {
 	margin-top: 35%;
-	color: black;
-	margin-left: auto;
-	margin-right: auto;
+	color: white;
+	background-color: #85001b;
 	font-size: 2em;
 	font-family: monospace;
 	width: 100%;
-	text-align: center;
+	position: relative;
+	padding: 5%;
 }
 
 h3 {
