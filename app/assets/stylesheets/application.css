@@ -1,7 +1,7 @@
 .navbar-default {
 	border: 0;
-	height: 60px;
-	background-color: transparent;
+	height: 50px;
+	background-color:  #85001b;
 }
 
 .navbar-header {
@@ -9,16 +9,13 @@
 }
 
 #search-bar {
-	padding-top: .5%;
-	padding-bottom: .5%;
+	position: relative;
+	padding: 1%;
 }
-
 
 .navbar-form {
   float: right;
   border: 0;
-  margin-top: 1%;
-  margin-bottom: 1%;
 }
 
 .navbar-toggle {
@@ -27,17 +24,13 @@
 }
 
 .navbar-collapse {
-	outline: 0;
 	border: 0;
-    margin-right: 10px;
-    margin-top: 5px;
-    width: 60%;
-	display: table-cell;
+    width: 50%;
 	text-align: left;
 }
 
 body { 
-  padding-top: 160px; 
+  padding-top: 120px; 
   color: black;
   text-align: center;
   font-family: monospace;
@@ -207,9 +200,8 @@ footer {
 
 @media only screen and (max-device-width: 480px) {
 			[class*=".search-bar"] {
-        margin-right: 3%;
-        margin-left: 3%;
-        width: 40%;
+        margin-left: 5%;
+        width: 60%;
     }
   }
 
