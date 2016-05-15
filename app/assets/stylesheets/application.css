@@ -1,11 +1,18 @@
 .navbar-default {
 	border: 0;
 	height: 60px;
+	background-color: transparent;
 }
 
 .navbar-header {
   border: 0;
 }
+
+#search-bar {
+	padding-top: .5%;
+	padding-bottom: .5%;
+}
+
 
 .navbar-form {
   float: right;
@@ -22,11 +29,15 @@
 .navbar-collapse {
 	outline: 0;
 	border: 0;
-	width: 100%;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 60%;
+	display: table-cell;
+	text-align: left;
 }
 
 body { 
-  padding-top: 115px; 
+  padding-top: 160px; 
   color: black;
   text-align: center;
   font-family: monospace;
@@ -194,9 +205,11 @@ footer {
 
 /* MEDIA QUERY */
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 480px) {
 			[class*=".search-bar"] {
-        width: 50%;
+        margin-right: 3%;
+        margin-left: 3%;
+        width: 40%;
     }
   }
 
