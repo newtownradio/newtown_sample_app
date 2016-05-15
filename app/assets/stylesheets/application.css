@@ -25,8 +25,8 @@
 
 .navbar-collapse {
 	border: 0;
-    width: 50%;
-	text-align: left;
+	text-align: center;
+	width: 100%;
 }
 
 body { 
