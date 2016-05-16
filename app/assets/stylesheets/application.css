@@ -9,7 +9,8 @@
 }
 
 #search-bar {
-	padding: 5px;
+  padding: 5px;
+  margin-right: 5px;
 }
 
 .navbar-form {
@@ -20,6 +21,7 @@
 .navbar-toggle {
 	outline: 0;
 	border: 0;
+	padding-left: 10px;
 }
 
 .navbar-collapse {
@@ -200,9 +202,8 @@ footer {
 /* MEDIA QUERY */
 
 @media only screen and (max-device-width: 480px) {
-			[class*=".search-bar"] {
-        margin-left: 5%;
-        width: 60%;
+			[class*="#search-bar"] {
+        width: 50%;
     }
   }
 
