@@ -49,6 +49,22 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+group :development do
+  gem 'guard' 
+end
+
+group :development do
+  gem 'guard-rspec', require: false
+end
+
+group :development do
+  gem 'spork-rails'
+end
+
+group :development do
+  gem 'guard-spork'
+end
+
 group :production do
 	gem 'rails_12factor'
 	gem 'pg'
