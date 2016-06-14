@@ -5,7 +5,7 @@ describe UsersController, :type => :controller do
   before do
     @user = FactoryGirl.create(:user)
    #@user = User.create!(email: "test@test.com", password: "password")
-   @user2 = User.create!(email: "test2@test.com", password: "2password")
+   @user2 = FactoryGirl.create(:user)
    end
 
    describe "GET #show" do
