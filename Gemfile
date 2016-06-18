@@ -65,6 +65,10 @@ group :development do
   gem 'guard-spork'
 end
 
+group :development do
+  gem 'stripe'
+end
+
 group :production do
 	gem 'rails_12factor'
 	gem 'pg'
