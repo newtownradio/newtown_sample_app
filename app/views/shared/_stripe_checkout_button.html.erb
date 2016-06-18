@@ -1,7 +1,7 @@
 <script
   src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-  data-key="<%= Rails.configuration.stripe['pk_test_kCrAjvgE32B3QsJAva3PReLz'] %>"
-  data-image="/square-image.png"
+  data-key=<%= Rails.configuration.stripe['pk_test_kCrAjvgE32B3QsJAva3PReLz'] %>
+  data-image= <%= @product.image_url %> 
   data-name="Products"
   data-description="1 item ($25.00)"
   data-amount="100">
