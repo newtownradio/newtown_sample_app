@@ -7,7 +7,6 @@ FactoryGirl.define do
 		last_name "user"
 		admin false
 	end
-end
 
 factory :admin, class: User do
   email "colin_ilgen@icloud.com"
@@ -15,4 +14,5 @@ factory :admin, class: User do
   admin true
   first_name "colin"
   last_name "ilgen"
+end
 end
