@@ -23,15 +23,11 @@ class PaymentsController < ApplicationController
       :description => params[:stripeEmail]
       :redirect_to @product_path(@product)
     )
-
-       :description => params[:stripeEmail]
-  )
+      :description => params[:stripeEmail]
 
   if charge.paid
     Order.create()
   end
-
-rescue Stripe::CardError => e
 ...
   rescue Stripe::CardError => e
     # The card has beenS declined
@@ -40,4 +36,5 @@ rescue Stripe::CardError => e
     flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
   end
   redirect_to product_path(product)
+end
 end
