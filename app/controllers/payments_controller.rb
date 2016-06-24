@@ -46,4 +46,3 @@ class PaymentsController < ApplicationController
   end
    product_path(product)
 end
-end
