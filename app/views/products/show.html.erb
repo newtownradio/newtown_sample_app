@@ -9,7 +9,7 @@
             <p><%= @product.colour %></p>
             <p><%= @product.price %><p>
             <div class="rated" data-score="<%= @product.average_rating %>"></div>
-            <%= form_tag "/payments/create" do %>
+            <%= form_tag('/payments') do %>
             <%= render partial: "shared/stripe_checkout_button" %>
             <% end %>
             <%= render 'new_comment' %>
