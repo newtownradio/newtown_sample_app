@@ -3,6 +3,6 @@
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
   data-image= <%= @product.image_url %> 
   data-name="Products"
-  data-description="1 item ($25.00)"
-  data-amount="100">
+  data-description="1 item ($25)"
+  data-amount="<%= @product.price %>">
 </script>
