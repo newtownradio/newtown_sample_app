@@ -1,21 +1,13 @@
 class PaymentsController < ApplicationController
 
-  def index
-  end
-
-  def show
-  end
-
-  def new
-  end
-
   def create
-  @product = Product.find(parms[:product_id])
-  @user = current_user[:user_id] 
-  token = params[:stripeToken]
-  # Create the charge on Stripe's servers - this will charge the user's card
-  begin charge = Stripe::Charge.create(
-            :amount => @product.price, 1000# amount in cents, again
+    @product = Product.find(parms[:product_id])
+    @user = current_user
+      token = params[:stripeToken]
+      # Create the charge on Stripe's servers - this will charge the user's card
+      begin
+        charge = Stripe::Charge.create(
+            :amount => @product.price, # amount in cents, again
             :currency => "usd",
             :source => token,
             :description => params[:stripeEmail]
@@ -26,6 +18,7 @@ class PaymentsController < ApplicationController
             :product_id => @product.id,
             :user_id => @user.id,
             :total => @product.price
+​
             )
         end
 ​
