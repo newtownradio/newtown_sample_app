@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
    @products = Product.where("name ilike ?", "%#{search_term}%")
  else
    @products = Product.all
+   logger.debug
  end
  end
 
@@ -20,6 +21,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
+    byebug
     @product = Product.new
   end
 
@@ -30,8 +32,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @product = Product.new(product_params)
-
+    @product = Product.new(product_params) 
     respond_to do |format|
       if @product.save
         format.html { redirect_to "/static_pages/landing_page", notice: 'Product was successfully created.' }
