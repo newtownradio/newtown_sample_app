@@ -15,7 +15,6 @@
           <% end %>
           <%= render 'new_comment' %>
           <%= render 'comments' %>
-          <% logger.debug "Product: #{@product.name}"%>
           <%= will_paginate @comments %>
           <p><a href="#" class="btn btn-primary" role="button">Submit</a>
         </div>

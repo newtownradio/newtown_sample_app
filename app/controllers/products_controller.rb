@@ -9,7 +9,6 @@ class ProductsController < ApplicationController
    @products = Product.where("name ilike ?", "%#{search_term}%")
  else
    @products = Product.all
-   logger.debug
  end
  end
 
@@ -21,10 +20,8 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    byebug
     @product = Product.new
   end
-
   # GET /products/1/edit
   def edit
   end
