@@ -43,6 +43,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'guard' 
   gem 'guard-rspec', require: false
+  gem 'brakeman', :require => false
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'stripe'

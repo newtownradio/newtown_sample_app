@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+rescue_from ActionController::InvalidAuthenticy Token do |exception|
+	sign_out_user #example method that will destroy user cookies
+end
+	
 rescue_from CanCan::AccessDenied do |exception|
 	redirect_to main_app.root_url, :alert => exception.message
 end
