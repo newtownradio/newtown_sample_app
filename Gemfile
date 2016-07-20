@@ -21,7 +21,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'angularjs-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -36,7 +36,6 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
   gem "factory_girl_rails", "~> 4.0"
-  gem 'angularjs-rails'
 end
 
 group :development do
@@ -47,7 +46,6 @@ group :development do
   gem 'brakeman', :require => false
   gem 'spork-rails'
   gem 'guard-spork'
-  gem 'stripe'
 end
 
 group :production do
