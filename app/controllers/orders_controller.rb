@@ -1,11 +1,12 @@
 class OrdersController < ApplicationController
+  before_filter :authenticate_user!
   protect_from_forgery
   skip_before_action :verify_authenticity_token, if: :json_request?
   respond_to :json, :html
-before_filter :authenticate_user!
 
   def index
-    @orders = Order.all.to_json(:include => [{:product => {:only => :name}}, {:user => :email}}])
+    @orders = Order.where(user_id: current_user.id)
+    # @orders = Order.all.to_json(:include => [{:product => {:only => :name}}, {:user => :email}}])
     respond_with @orders
   end
 
