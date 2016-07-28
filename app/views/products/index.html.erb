@@ -2,8 +2,11 @@
 <h1><div id="page-layout" class="img-responsive">Merch</div></h1>
 <div id="container" class="img-responsive">
 <div class="row">
-  <%= render @products %>
+  <% cache(cache_key_for_@products) do %>
+    <%= render @products %>
+  <% end %>
 <br>
+
 
 <%= link_to 'New Product', new_product_path %>
 
