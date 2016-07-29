@@ -14,12 +14,11 @@ app.factory('models', ['$resource', function($resource){
 }]);
 app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
   // Here will be all code belonging to this controller
-$scope.orders = models.orders = models.orders.query();
 $scope.products = models.products.query();
 $scope.addOrder = function(){
 	if (!$scope.newOrder.product_id || $scope.newOrder.total === ''){ return; }
 	order = models.orders.save($scope.newOrder, function(){
-	  recent_order = models.orders.get({id: order.id});
+	  recent_order = models.orders.get(order.id);
 	  $scope.orders.push(recent_order);
 	  $scope.newOrder = '';
 	});
