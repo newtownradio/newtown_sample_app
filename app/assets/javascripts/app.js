@@ -15,7 +15,7 @@ app.factory('models', ['$resource', function($resource){
 app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
   // Here will be all code belonging to this controller
 $scope.products = models.products.query();
-$scope.addOrder = function(){
+$scope.newOrder = function(){
 	if (!$scope.newOrder.product_id || $scope.newOrder.total === ''){ return; }
 	order = models.orders.save($scope.newOrder, function(){
 	  recent_order = models.orders.get(order.id);

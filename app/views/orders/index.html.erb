@@ -5,7 +5,7 @@
   <form class="form-inline" ng-submit="addOrder()">
     <strong>Add order: </strong>
     <select ng-model="newOrder.product_id" class="form-control">
-      <option value="" selected>Select a product</option>
+      <option value="" disabled selected>Select a product</option>
       <option ng-repeat="product in products" value="{{product.id}">{{product.name}}</option>
     </select>
 
