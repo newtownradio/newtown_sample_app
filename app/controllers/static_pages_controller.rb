@@ -1,16 +1,17 @@
 class StaticPagesController < ApplicationController
   def landing_page
     @products = Product.limit(3)
-  end
-  def index
-  end
-  def about
-  end
-  def contact
-  end
-  def featured
-  end
-  def calendar
+    end
+    def index
+    end
+    def about
+    end
+    def contact
+    end
+    def featured
+    end
+    def calendar
+    end
   end
 
 def thank_you
@@ -23,5 +24,4 @@ def thank_you
       :body => @message).deliver_now
 end
 
-end
 
