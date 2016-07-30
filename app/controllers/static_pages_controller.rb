@@ -1,17 +1,16 @@
 class StaticPagesController < ApplicationController
   def landing_page
     @products = Product.limit(3)
-    end
-    def index
-    end
-    def about
-    end
-    def contact
-    end
-    def featured
-    end
-    def calendar
-    end
+  end
+  def index
+  end
+  def about
+  end
+  def contact
+  end
+  def featured
+  end
+  def calendar
   end
 
 def thank_you
@@ -19,9 +18,10 @@ def thank_you
   @email = params[:email]
   @message = params[:message]
   ActionMailer::Base.mail(:from => @email,
-      :to => 'colin.ilgen@gmail.com',
+      :to => 'colin.ilgen@example.com',
       :subject => "A new contact form message from #{@name}",
       :body => @message).deliver_now
 end
 
+end
 
