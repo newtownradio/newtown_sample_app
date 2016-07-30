@@ -6,18 +6,21 @@ class StaticPagesController < ApplicationController
   end
   def about
   end
-  def contact 
+  def contact
   end
   def featured
   end
   def calendar
   end
 
-def thank_you
+  def thank_you
    @name = params[:name]
    @email = params[:email]
    @message = params[:message]
-     UserMailer.contact_form(@email, @name, @message).deliver_now
-     post '/contact_form', to: redirect('/static_pages/thank_you')
- end
- end
+     ActionMailer::Base.mail(:from => @email,
+      :to => 'colin.ilgen@gmail.com',
+      :subject => "A new contact form message from #{@name}",
+      :body => @message).deliver_now
+  end
+end
+
