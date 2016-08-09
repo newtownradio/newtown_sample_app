@@ -2,16 +2,6 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   respond_to :json, :html
 
-def featured_product
-  if featured_product > :rating
-    $redis.sadd(:rating, product_name, product.image_url, :show)
-  end
-end
-
-def top_3
-  $redis.zrevrange(featured_product,0,2).map{Product.find(:rating)}
-end
-
   # GET /products
   # GET /products.json
  def index
