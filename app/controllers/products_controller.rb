@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
 
 def featured_product
   if featured_product > :rating
-    $redis.zadd(:rating, {product_name, image_tag(product.image_url)}, link_to 'show' product)
+    $redis.zadd(:rating, product_name, product.image_url, link_to 'show' product)
   end
 end
 
