@@ -2,6 +2,16 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   respond_to :json, :html
 
+def featured_product
+  if featured_product > :rating
+    $redis.zadd(:rating, {product_name, image_tag(product.image_url)}, link_to 'show' product)
+  end
+end
+
+def top_3
+  $redis.zrevrange(featured_product,0,2).map{|:rating|Product.find(:rating)}
+end
+
   # GET /products
   # GET /products.json
  def index
@@ -31,7 +41,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @product = Product.new(product_params) 
+    @product = Product.new(product_params)
     respond_to do |format|
       if @product.save
         format.html { redirect_to "/static_pages/landing_page", notice: 'Product was successfully created.' }

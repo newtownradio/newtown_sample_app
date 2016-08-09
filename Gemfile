@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'angularjs-rails'
 gem 'dalli'
+gem 'redis-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -42,7 +43,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-  gem 'guard' 
+  gem 'guard'
   gem 'guard-rspec', require: false
   gem 'brakeman', :require => false
   gem 'spork-rails'
