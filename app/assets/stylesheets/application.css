@@ -139,6 +139,7 @@ h3 {
 	font-size: 2em;
 	font-family: monospace;
 	position: relative;
+  width: 100%;
 }
 
 h4 {
@@ -147,7 +148,7 @@ h4 {
 
 h6 {
 	font-family: monospace;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 img {
