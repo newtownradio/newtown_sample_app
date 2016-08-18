@@ -200,9 +200,15 @@ footer {
 /* MEDIA QUERY */
 
 @media only screen and (max-device-width: 411px) {
-			#search-bar body {
-        width: 90%;
-    }
+	#search-bar {
+  width: 90%;
+  }
+  body {
+  width: 90%;
+      }
+  footer {
+  width: 90%;
+      }
   }
 
 /*
