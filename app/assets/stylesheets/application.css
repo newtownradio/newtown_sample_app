@@ -30,8 +30,8 @@
 	width: 100%;
 }
 
-body { 
-  padding-top: 40px; 
+body {
+  padding-top: 40px;
   color: black;
   text-align: center;
   font-family: monospace;
@@ -122,7 +122,7 @@ h1 {
 	width: 100%;
 	color: black;
 	font-size: 2em;
-	font-family: monospace; 
+	font-family: monospace;
 	text-align: center;
 }
 
@@ -190,7 +190,7 @@ img {
 
 footer {
 	position: relative;
-	text-align: center;	
+	text-align: center;
 	bottom: 0;
 	padding: 2%;
 	font-family: monospace;
@@ -199,7 +199,7 @@ footer {
 
 /* MEDIA QUERY */
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 411px) {
 			#search-bar {
         width: 90%;
     }
