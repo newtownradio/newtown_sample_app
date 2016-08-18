@@ -31,7 +31,7 @@ class OrdersController < ApplicationController
   def json_request?
     request.format.json?
   end
-  
+
   private
 
   def order_params

@@ -9,9 +9,9 @@ mail(:from => email,
 end
 
 def welcome(user)
-	@appname = "Newtown Radio"
-	mail(:to => user.email, 
-		 :subject => "Welcome to #{@appname}!")
+  @appname = "Newtown Radio"
+  mail(:to => user.email,
+     :subject => "Welcome to #{@appname}!")
 end
 
 def thank_you
@@ -19,7 +19,7 @@ def thank_you
   @email = params[:email]
   @message = params[:message]
   UserMailer.contact_form(@name, @email, @message).deliver_now
-  
+
 end
 
 end

@@ -9,11 +9,12 @@
           <h3><%= @product.name %></h3>
           <p><%= @product.description %></p>
           <p><%= @product.colour %></p>
-          <p><%= @product.price %><p>
+          <p><%= @product.price %>
+          <p>
           <div class="rated" data-score="<%= @product.average_rating %>"></div>
           <%= form_tag('/payments') do %>
-            <%= hidden_field_tag(:product_id, @product.id) %>
-            <%= render partial: "shared/stripe_checkout_button" %>
+          <%= hidden_field_tag(:product_id, @product.id) %>
+          <%= render partial: "shared/stripe_checkout_button" %>
           <% end %>
           <%= render 'new_comment' %>
           <%= render 'comments' %>
@@ -24,12 +25,9 @@
       </div>
     </div>
   </div>
-
   <h5>
     <a><span class="glyphicon glyphicon-comment"></span></a>
   </h5>
-
 </div>
-
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
