@@ -47,7 +47,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 320px;
+	width: 80%;
 	display: block;
 	color: black;
 }
@@ -201,13 +201,14 @@ footer {
 
 @media only screen and (max-device-width: 411px) {
 	#search-bar {
-  width: 90%;
+  width: 85%;
   }
   body {
-  width: 90%;
+  width: 80%;
+  margin: auto;
       }
   footer {
-  width: 90%;
+  width: 80%;
       }
   }
 
