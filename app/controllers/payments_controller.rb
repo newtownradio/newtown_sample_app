@@ -16,7 +16,7 @@ class PaymentsController < ApplicationController
       if charge.paid
         Order.create(
           :product_id => @product.id,
-          :user_id => @user.id,
+          :user_id => @user,
           :total => @product.price
         )
       end
@@ -28,6 +28,7 @@ class PaymentsController < ApplicationController
       flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
     end
 
-    redirect_to product_path(@product), notice: "Thank you for your purchase"
+    redirect_to product_path(@product), notice: "Thank you for your purchase."
   end
+
 end
