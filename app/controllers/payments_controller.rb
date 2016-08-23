@@ -28,7 +28,13 @@ class PaymentsController < ApplicationController
       flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
     end
 
-    redirect_to product_path(@product), notice: "Thank you for your purchase."
+    redirect_to product_path(@product), notice: "Thank you for your purchase"
   end
 
+  def send_purchase_email(user)
+   @user = user
+   mail( :to => @user.email,
+     :subject => "Thank You for your purchase #{@user}" )
+  end
 end
+

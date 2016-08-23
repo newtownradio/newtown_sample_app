@@ -38,6 +38,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def create
+    # Create the user from params
+    @user = User.new(params[:user])
+    if @user.save
+      # Deliver the signup email
+      UserNotifier.send_purchase_email(@user).deliver
+    else
+      render :action => 'new'
+    end
+  end
+
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
