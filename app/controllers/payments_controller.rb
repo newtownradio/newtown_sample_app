@@ -1,5 +1,5 @@
 class PaymentsController < ApplicationController
-layout "mailer"
+  layout "mailer"
   def create
     @product = Product.find(params[:product_id])
     @user = current_user
@@ -33,7 +33,7 @@ layout "mailer"
   end
 
   def thank_you(user)
-  UserMailer.contact_form(user.name, user.email, "Thank you!").deliver_now
+    UserMailer.contact_form(user.name, user.email, "Thank you!").deliver_now
   end
 end
 
