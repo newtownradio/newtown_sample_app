@@ -1,5 +1,5 @@
 class PaymentsController < ApplicationController
-
+layout "mailer"
   def create
     @product = Product.find(params[:product_id])
     @user = current_user
@@ -14,6 +14,7 @@ class PaymentsController < ApplicationController
       )
 
       if charge.paid
+        UserMailer.thank_you
         Order.create(
           :product_id => @product.id,
           :user_id => @user,
@@ -31,10 +32,8 @@ class PaymentsController < ApplicationController
     redirect_to product_path(@product), notice: "Thank you for your purchase"
   end
 
-  def send_purchase_email(user)
-   @user = user
-   mail( :to => @user.email,
-     :subject => "Thank You for your purchase #{@user}" )
+  def thank_you(user)
+  UserMailer.contact_form(user.name, user.email, "Thank you!").deliver_now
   end
 end
 
