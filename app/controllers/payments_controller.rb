@@ -14,7 +14,7 @@ class PaymentsController < ApplicationController
       )
 
       if charge.paid
-        UserMailer.thank_you
+        UserMailer.thank_you(current_user)
         Order.create(
           :product_id => @product.id,
           :user_id => @user,
