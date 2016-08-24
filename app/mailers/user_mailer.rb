@@ -14,12 +14,8 @@ def welcome(user)
      :subject => "Welcome to #{@appname}!")
 end
 
-def thank_you
-  @name = params[:name]
-  @email = params[:email]
-  @message = params[:message]
-  UserMailer.contact_form(@name, @email, @message).deliver_now
-
+def thank_you(user)
+  UserMailer.contact_form(user.name, user.email, "Thank you!").deliver_now
 end
 
 end
