@@ -22,4 +22,9 @@ def thank_you
 
 end
 
+def payments_email(customer)
+  @customer = customer
+  mail(:to => @customer.email, :subject => "Payment Confirmation")
+end
+
 end
