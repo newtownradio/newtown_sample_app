@@ -17,3 +17,5 @@ describe StaticPagesController, :type => :controller do
   end
 
 end
+
+#test mailer
