@@ -146,6 +146,14 @@ h3 {
 	position: relative;
 }
 
+h3 a {
+  color:#FF69B4;
+}
+
+h3 a:hover {
+  color:#FF69B4;
+}
+
 h4 {
   width: 100%;
 	text-align: center;
