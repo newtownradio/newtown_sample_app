@@ -1,7 +1,7 @@
-require 'rails_helper'
+#require 'rails_helper'
 
-describe OrdersController, :type => :controller do
+#describe OrdersController, :type => :controller do
 
-before do
+#before do
 
 

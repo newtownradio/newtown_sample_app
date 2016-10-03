@@ -1,3 +1,3 @@
-require 'rails_helper'
+#require 'rails_helper'
 
-describe PaymentsController, :type => :controller do
+#describe PaymentsController, :type => :controller do

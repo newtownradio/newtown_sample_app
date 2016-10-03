@@ -5,6 +5,7 @@ describe StaticPagesController, :type => :controller do
     before do
       get :index
     end
+  end
 
     it "responds successfully with an HTTP 200 status code" do
       expect(response).to be_success
@@ -14,8 +15,6 @@ describe StaticPagesController, :type => :controller do
     it "renders the index template" do
       expect(response).to render_template("index")
     end
-  end
-
 end
 
 #test mailer

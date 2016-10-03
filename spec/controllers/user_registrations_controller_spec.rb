@@ -4,12 +4,15 @@ describe UserRegistrationsController, :type => :controller do
 
   before do
     @user = FactoryGirl.create(:user)
+  end
 
   describe "GET #show" do
     context "User is logged in" do
     before do
     sign_in @user
     end
+  end
+  end
 
   it "loads correct user details" do
     get :show, id: @user.id
@@ -30,5 +33,6 @@ describe UserRegistrationsController, :type => :controller do
         expect(response).to redirect_to (new_user_session_path)
     end
   end
+
 end
 
