@@ -15,28 +15,22 @@ before do
   end
   end
 
+  it "saves correct comments details" do
+    post :comments, id: :products
+    expect(response).to redirect_to @product
+  end
+
+
+  it "destroys correct comments details" do
+    post :comments, id: @users
+    expect(response).to redirect_to @product
+  end
+
   context "No user is logged in" do
     it "redirects_to login" do
-    get :show, id:@user.id
+    post :sign_out, id: @users
     expect(response).to redirect_to (new_user_session_path)
   end
-  end
-
-  context "User is logged in" do
-    it "saves correct comment details" do
-    post :show, id: @user.id
-    expect(response).to redirect_to @product
-  end
-  end
-
-  it "does not save correct comment details" do
-    post :show, id: @user.id
-    expect(response).to have_http_status(302)
-  end
-
-  it "destroys correct comment details" do
-    delete :show, id: @user.admin
-    expect(response).to redirect_to @product
   end
 
 end

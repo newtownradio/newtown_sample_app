@@ -13,7 +13,7 @@ describe StaticPagesController, :type => :controller do
     end
 
     it "renders the index template" do
-      expect(response).to render_template("index")
+      expect(response).to render_template('static_pages/index')
     end
 end
 
