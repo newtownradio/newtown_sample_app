@@ -11,10 +11,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 <!-- Single button -->
-  <body ng-app="shop">
+  <body ng-app="shop" style="padding-top:36px;width: 94%;color: black; text-align: center;font-family: monospace;margin-left: auto;margin-right: auto;">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
-      <div class="navbar-form pull-left" id="search-bar">
+      <div class="navbar-form pull-left" id="search-bar" stye="padding: 5px;
+  margin-right: 5px;">
         <%= form_tag("/products", method: "get") do %>
         <%= text_field_tag(:q) %>
         <%= submit_tag("Search") %>
@@ -54,7 +55,7 @@
       <% end %>
       <%= yield %>
       <div class="col-sm-12">
-        <footer>
+        <footer style="position: relative;text-align: center;bottom: 0;padding: 2%;font-family: monospace;font-size: 1em;margin-left: auto;margin-right: auto;">
         <br>
           <p>&copy; 2016</p>
           <p>All Rights Reserved.</p>

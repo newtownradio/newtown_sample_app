@@ -8,10 +8,10 @@
   border: 0;
 }
 
-#search-bar {
+/*#search-bar {
   padding: 5px;
   margin-right: 5px;
-}
+}*/
 
 .navbar-form {
   float: right;
@@ -30,7 +30,7 @@
 	width: 100%;
 }
 
-body {
+/*body {
   padding-top: 36px;
   width: 94%;
   color: black;
@@ -38,7 +38,7 @@ body {
   font-family: monospace;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .test {
   background-color: black;
@@ -203,7 +203,7 @@ img {
 	font-size: 1.5em;
 }
 
-footer {
+/*footer {
 	position: relative;
 	text-align: center;
 	bottom: 0;
@@ -212,7 +212,7 @@ footer {
 	font-size: 1em;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 /* MEDIA QUERY */
 
