@@ -12,24 +12,24 @@
   </head>
 <!-- Single button -->
   <body ng-app="shop" style="padding-top:36px;width: 94%;color: black; text-align: center;font-family: monospace;margin-left: auto;margin-right: auto;">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="border: 0;height: 50px;background-color:  #85001b;">
       <div class="container-fluid">
-      <div class="navbar-form pull-left" id="search-bar" stye="padding: 5px;
+      <div class="navbar-form pull-left" style="float: right;border: 0;" id="search-bar" stye="padding: 5px;
   margin-right: 5px;">
         <%= form_tag("/products", method: "get") do %>
         <%= text_field_tag(:q) %>
         <%= submit_tag("Search") %>
         <% end %>
       </div>
-      <div class="navbar-header pull-right">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <div class="navbar-header pull-right" style="border: 0;">
+        <button type="button" class="navbar-toggle" style="outline: 0; border: 0;padding-left: 10px;"data-toggle="collapse" data-target=".navbar-collapse" style="border: 0;text-align: left;width: 100%;">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" style="border: 0;text-align: left;width: 100%;"">
         <ul class="nav navbar-nav">
           <li><%= link_to "About", static_pages_about_path %></li>
           <li><%= link_to "Featured", static_pages_featured_path %></li>
@@ -46,7 +46,7 @@
       <!-- end nav collapse -->
     </nav>
     <!-- end navbar -->
-    <div class="spacing">
+    <div class="spacing" style="padding: 1%;">
       <% if alert %>
       <p id="alert" class="alert alert-info"><%= alert %></p>
       <% end %>
