@@ -15,31 +15,30 @@ describe 'GET #index, POST #show, UPDATE #create DELETE #destroy' do
   end
   end
 
+context 'GET #index, id: @user'
   it "show correct order details" do
-    get :index, id: @user
-    expect(response).to respond_with @order
+    expect(response).to have_http_status(200)
   end
 
+context 'post #show, id: @user'
   it "saves correct order details" do
-    post :show, id: @user
     expect(response).to have_http_status(200)
   end
 
+context 'update #create, id: @order'
   it "updates correct order details" do
-    update :create, id: @order
-    expect(response).to respond_with @order
-  end
-
-  it "destroys correct order details" do
-    delete :destroy, id: @user
     expect(response).to have_http_status(200)
   end
 
-  context "No user is logged in" do
-    it "redirects_to login" do
-    get :sign_in, id: @user
-    expect(response).to params.require(:order).permit(:product_id, :user_id, :total)
+context 'delete #destroy, id: @user'
+  it "destroys correct order details" do
+    expect(response).to have_http_status(200)
   end
+
+  context 'get #sign_in, id: @user'
+    it "redirects_to login" do
+    expect(response).to require(:order).permit(:product_id, :user_id, :total)
+    expect(response).to have_http_status(200)
   end
 end
 

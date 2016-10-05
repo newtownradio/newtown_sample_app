@@ -1,9 +1,14 @@
 require 'rails_helper'
 
- describe Order, :type => :model do
+describe Order, :type => :model do
 
-   before do
-     @user = FactoryGirl.build(:user, orders: @orders, product: @product)
+  before do
+    @user = FactoryGirl.create(:user, orders: @orders, product: @product)
   end
 
- end
+  it "creates a successful order" do
+    expect(response).to eq orders: @orders
+    expect(response).to eq have_http_status(200)
+  end
+
+end

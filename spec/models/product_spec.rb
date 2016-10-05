@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Product do
+describe Product, type: :model do
  before do
    @product = Product.create!(name: "Race Bike")
    @user = User.create(email: "test@test.com", password: "password")

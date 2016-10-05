@@ -15,6 +15,7 @@ before do
         :email => params[:stripeEmail],
 
       )
+  expect(response).to eq have_http_status(200)
 
   charge = Stripe::Charge.create(
     :amount => @product.price,
