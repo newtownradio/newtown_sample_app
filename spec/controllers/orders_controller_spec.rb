@@ -17,28 +17,28 @@ describe 'GET #index, POST #show, UPDATE #create DELETE #destroy' do
 
   it "show correct order details" do
     get :index, id: @user
-    expect(response).to redirect_to @orders
+    expect(response).to respond_with @order
   end
 
   it "saves correct order details" do
     post :show, id: @user
-    expect(response).to redirect_to @orders
+    expect(response).to have_http_status(200)
   end
 
   it "updates correct order details" do
-    update :create, id: @user
-    expect(response).to redirect_to @orders
+    update :create, id: @order
+    expect(response).to respond_with @order
   end
 
   it "destroys correct order details" do
     delete :destroy, id: @user
-    expect(response).to redirect_to @orders
+    expect(response).to have_http_status(200)
   end
 
   context "No user is logged in" do
     it "redirects_to login" do
     get :sign_in, id: @user
-    expect(response).to redirect_to (new_user_session_path)
+    expect(response).to params.require(:order).permit(:product_id, :user_id, :total)
   end
   end
 end

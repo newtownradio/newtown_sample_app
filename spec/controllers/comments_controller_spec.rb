@@ -3,34 +3,32 @@ require 'rails_helper'
 describe CommentsController, :type => :controller do
 
 before do
-  @user = FactoryGirl.create(:user)
-  @user.admin = FactoryGirl.create(:admin)
+  @product = FactoryGirl.create(Product.find(params[:product_id]))
+  @comment = FactoryGirl.create(@product.comments.new(comment_params))
+  @user = FactoryGirl.create(user)
   end
 
-  describe 'POST #show' do
-    context "User is logged in" do
-    before do
-    sign_in@user
-  end
-  end
+context "GET #{:show}"
+  it "loads correct comment" do
+  expect(response).to format.html { redirect_to @product, notice: 'Review was created successfully.' }
+  expect(response).to format.json { render :show, status: :created, location: @product }
+  expect(response).to format.js
+end
+  it "does not load correct comment" do
+  expect(response).to format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
+  expect(response).to format.json { render json: @comment.errors, status: :unprocessable_entity }
+end
+
+context "destroy #{@comment}"
+ it "destroys correct commment" do
+  @comment = Comment.find(params[:id])
+  product = @comment.product
+  @comment.destroy
+  redirect_to @product
   end
 
-  it "saves correct comments details" do
-    post :comments, id: :products
-    expect(response).to redirect_to @product
+  context private do
+    it def comment_params
   end
-
-
-  it "destroys correct comments details" do
-    post :comments, id: @users
-    expect(response).to redirect_to @product
-  end
-
-  context "No user is logged in" do
-    it "redirects_to login" do
-    post :sign_out, id: @users
-    expect(response).to redirect_to (new_user_session_path)
-  end
-  end
-
+end
 end
