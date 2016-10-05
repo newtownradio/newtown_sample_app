@@ -16,12 +16,3 @@
 //= require angular
 //= require angular-resource
 //= require_tree .
-
-/*
- AngularJS v1.5.6
- (c) 2010-2016 Google, Inc. http://angularjs.org
- License: MIT
- AngularJS v1.5.6
- (c) 2010-2016 Google, Inc. http://angularjs.org
- License: MIT
-*/
