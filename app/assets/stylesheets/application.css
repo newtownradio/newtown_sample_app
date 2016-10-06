@@ -1,3 +1,64 @@
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+  font-family: monospace;
+}
+
+h1 {
+    position: relative;
+  width: 100%;
+  color: black;
+  font-size: 2em;
+  font-family: monospace;
+  text-align: center;
+}
+
+h2 {
+  width: 100%;
+  color: black;
+  font-size: 1.4em;
+  font-family: monospace;
+  width: 100%;
+  position: relative;
+}
+
+h3 {
+  width: 100%;
+  margin-top: 5%;
+  font-size: 2em;
+  padding: 1%;
+  font-family: monospace;
+  position: relative;
+}
+
+h3 a {
+  color:#FF69B4;
+}
+
+h3 a:hover {
+  color:#FF69B4;
+}
+
+h4 {
+  width: 100%;
+  text-align: center;
+}
+
+h6 {
+  width: 100%;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .test {
   background-color: black;
   color: white;
