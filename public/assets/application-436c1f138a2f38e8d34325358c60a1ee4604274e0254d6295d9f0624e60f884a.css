@@ -1,0 +1,130 @@
+.test {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
+
+#contact-form {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 66%;
+	display: block;
+	color: black;
+}
+
+.form-inline {
+	margin: auto;
+	text-align: center;
+	width: auto;
+  width: 66%;
+	display: block;
+	color: black;
+}
+
+.btn {
+	color: #FF69B4;
+	outline: 0;
+}
+
+#session-new {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	font-family: monospace;
+}
+
+#editing-form {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	font-family: monospace;
+}
+
+#new-sign-up {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	font-family: monospace;
+}
+
+
+.thumbnail {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+}
+
+.caption {
+	text-align: center;
+	display: block;
+	font-family: monospace;
+}
+
+#carousel-example-generic {
+	color: black;
+	background-color: white;
+  font-family: monospace;
+  font-size: 1em;
+  margin: 5%;
+  left: auto;
+  right: auto;
+  text-align: center;
+}
+
+#carousel-example-generic img {
+  height: 100%;
+  width: 100%;
+ }
+
+#page-layout {
+	font-size: 2.5em;
+	color: black;
+	font-family: monospace;
+	background-repeat: no-repeat;
+	margin: auto;
+	text-align: center;
+	position: relative;
+}
+
+#product-links {
+  padding: 3%;
+	font-family: Serif;
+	font-size: 1.5em;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-device-width: 411px) {
+  #search-bar {
+  width: 85%;
+  }
+  body {
+  width: 80%;
+  margin: auto;
+      }
+  footer {
+  width: 80%;
+      }
+  }
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
