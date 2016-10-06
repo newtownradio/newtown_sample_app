@@ -9,15 +9,13 @@
 }
 
 #search-bar {
-  padding: 5px;
-  margin-top: 15px;
-  border: 5px;
+
 }
 
 .navbar-form {
   float: right;
   border: 0;
-  padding-top: 0;
+  padding-top: 5px;
 }
 
 .navbar-toggle {
