@@ -1,60 +1,41 @@
-
-p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: block;
-  font-family: monospace;
+.navbar-default {
+	border: 0;
+	height: 50px;
+	background-color:  #85001b;
 }
 
-h1 {
-    position: relative;
-  width: 100%;
+.navbar-header {
+  border: 0;
+}
+
+#search-bar {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.navbar-form {
+  float: right;
+  border: 0;
+}
+
+.navbar-toggle {
+	outline: 0;
+	border: 0;
+	padding-left: 10px;
+}
+
+.navbar-collapse {
+	border: 0;
+	text-align: left;
+	width: 100%;
+}
+
+body {
+  padding-top: 36px;
+  width: 94%;
   color: black;
-  font-size: 2em;
-  font-family: monospace;
   text-align: center;
-}
-
-h2 {
-  width: 100%;
-  color: black;
-  font-size: 1.4em;
   font-family: monospace;
-  width: 100%;
-  position: relative;
-}
-
-h3 {
-  width: 100%;
-  margin-top: 5%;
-  font-size: 2em;
-  padding: 1%;
-  font-family: monospace;
-  position: relative;
-}
-
-h3 a {
-  color:#FF69B4;
-}
-
-h3 a:hover {
-  color:#FF69B4;
-}
-
-h4 {
-  width: 100%;
-  text-align: center;
-}
-
-h6 {
-  width: 100%;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-img {
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -113,6 +94,9 @@ img {
 	font-family: monospace;
 }
 
+.spacing {
+	padding: 1%;
+}
 
 .thumbnail {
 	margin-left: auto;
@@ -125,6 +109,66 @@ img {
 	text-align: center;
 	display: block;
 	font-family: monospace;
+}
+
+p {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	font-family: monospace;
+}
+
+h1 {
+    position: relative;
+	width: 100%;
+	color: black;
+	font-size: 2em;
+	font-family: monospace;
+	text-align: center;
+}
+
+h2 {
+  width: 100%;
+	color: black;
+	font-size: 1.4em;
+	font-family: monospace;
+	width: 100%;
+	position: relative;
+}
+
+h3 {
+  width: 100%;
+	margin-top: 5%;
+	font-size: 2em;
+  padding: 1%;
+	font-family: monospace;
+	position: relative;
+}
+
+h3 a {
+  color:#FF69B4;
+}
+
+h3 a:hover {
+  color:#FF69B4;
+}
+
+h4 {
+  width: 100%;
+	text-align: center;
+}
+
+h6 {
+  width: 100%;
+	font-family: monospace;
+	font-size: 2em;
+}
+
+img {
+	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #carousel-example-generic {
@@ -157,6 +201,17 @@ img {
   padding: 3%;
 	font-family: Serif;
 	font-size: 1.5em;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	padding: 2%;
+	font-family: monospace;
+	font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* MEDIA QUERY */
