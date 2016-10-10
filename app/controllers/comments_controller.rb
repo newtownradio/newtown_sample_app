@@ -6,26 +6,40 @@ class CommentsController < ApplicationController
    @comment.user = current_user
    respond_to do |format|
      if @comment.save
-       format.html { redirect_to products_url, notice: 'Review was created successfully.' }
-       format.json { render :show, status: :created, location: @products }
+       format.html { redirect_to products_url, notice: 'Success! Your review was created.' }
+       format.json { render :show, status: :created, location: products_url }
        format.js
      else
-       format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
+       format.html { redirect_to @product, alert: 'Error: Unable to save review' }
        format.json { render json: @comment.errors, status: :unprocessable_entity }
      end
    end
  end
+
+  def edit
+  @comment = Comment.find(params[:id])
+  @product = @comment.product
+  respond_to do |format|
+    if @comment.edit
+      format.html { redirect_to products_url, notice: 'Updated.' }
+      format.json { render :show, status: :updated, location: products_url }
+    else
+      format.html { redirect_to @products, alert: 'Error: Unable to update review.'}
+      format.json { render json: @comment.errors, status: :unprocessable_entity}
+    end
+  end
+end
 
 	def destroy
   @comment = Comment.find(params[:id])
   product = @comment.product
   repond_to do |format|
   if @comment.destroy
-    format.html { redirect_to products_url, notice: 'Comment was successfully destroyed.' }
-    format.json { render :show, status: :destroyed, location: @products }
+    format.html { redirect_to products_url, notice: 'The review was deleted.' }
+    format.json { render :show, status: :destroyed, location: @comment.product }
     format.js
   else
-    format.html { redirect to @product, alert: 'Comment was not destroyed successfully.'}
+    format.html { redirect to @products, alert: 'Error: Unable to destroy review.'}
     format.json { render json: @comment.errors, status: :unprocessable_entity }
    end
   end
