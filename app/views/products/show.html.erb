@@ -1,5 +1,5 @@
-<% cache @product do %>
 <div class="show">
+<% cache @product do %>
   <div class="row">
     <div class="col-xs-12">
       <div class="thumbnail">
@@ -22,13 +22,13 @@
       </div>
     </div>
   </div>
-
+<% end %>
   <h5>
     <a><span class="glyphicon glyphicon-comment"></span></a>
   </h5>
 
 </div>
-<% end %>
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
