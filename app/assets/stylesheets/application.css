@@ -4,6 +4,10 @@
 	background-color:  #85001b;
 }
 
+.navbar-text {
+	color: white;
+}
+
 .navbar-header {
   border: 0;
 }
