@@ -34,7 +34,7 @@
         <ul class="nav navbar-nav">
           <li><%= link_to "About", static_pages_about_path %></li>
           <li><%= link_to "Featured", static_pages_featured_path %></li>
-          <li><%= link_to "Archive", products_path %></li>
+          <li><%= link_to "Store", products_path %></li>
           <li>
             <% if user_signed_in? %>
             <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
