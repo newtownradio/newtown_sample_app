@@ -10,6 +10,6 @@ button input optgroup select textarea {
 	color: white
 }
 
-#navbar-style {
-  color: black;
+#navbar-style.container-fluid {
+  background-color: black;
 }
