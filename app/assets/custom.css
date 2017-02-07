@@ -9,3 +9,7 @@ button input optgroup select textarea {
 .navbar-text a {
 	color: white
 }
+
+#navbar-style {
+  color: black;
+}
