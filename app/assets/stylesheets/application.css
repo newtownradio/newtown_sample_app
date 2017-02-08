@@ -1,7 +1,7 @@
 .navbar-default {
 	border: 0;
 	height: 50px;
-	background-color:  black;
+	background-color: #85001b;
 }
 
 .navbar-text {
@@ -36,7 +36,7 @@
 
 body {
   padding-top: 36px;
-  width: 84%;
+  width: 72%;
   color: black;
   text-align: center;
   font-family: monospace;
