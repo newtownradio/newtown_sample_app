@@ -2,7 +2,7 @@
 <center>
 <h1><%= image_tag("supreme.basquiet.jpg", class:"img-responsive")%>
 <div class="row" id="about-page">
-  <div class="col-lg-8">
+  <div class="col-lg-12">
 <p><b>Newtown Radio</b></p>
 <p>We are a Brooklyn based Internet radio station dedicated to serving the great music that the neighborhoods around Newtown Creek create and enjoy — Williamsburg, Greenpoint, Bushwick, Long Island City, & Ridgewood Queens.</p>
 <br>
@@ -16,7 +16,7 @@
 </div>
 <%= form_tag('/static_pages/thank_you') do %>
 <div class="row" id="contact-form">
-    <div class="col-lg-8">
+    <div class="col-lg-12">
         <div class="form-group">
             <%= label_tag :name, "Name" %>
             <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", :required => true %>
